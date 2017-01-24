@@ -409,5 +409,7 @@
     justify-content: space-around; }
   .space-between {
     justify-content: space-between; }
+  pre {
+    overflow-x: auto; }
 
 /*# sourceMappingURL=styles.css.map*/
