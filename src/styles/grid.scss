@@ -4,58 +4,47 @@
   display: flex;
 
   > .grow-1 {
-    -js-flex-grow: 1;
     flex-grow: 1;
   }
 
   > .grow-2 {
-    -js-flex-grow: 2;
     flex-grow: 2;
   }
 
   > .grow-3 {
-    -js-flex-grow: 3;
     flex-grow: 3;
   }
 
   > .grow-4 {
-    -js-flex-grow: 4;
     flex-grow: 4;
   }
 }
 
 .row {
-  -js-flex-direction: row;
   flex-direction: row;
 }
 
 .column {
-  -js-flex-direction: column;
   flex-direction: column;
 }
 
 .align-start {
-  -js-justify-content: flex-start;
   justify-content: flex-start;
 }
 
 .align-center {
-  -js-justify-content: flex-center;
   justify-content: center;
 }
 
 .align-end {
-  -js-justify-content: flex-end;
   justify-content: flex-end;
 }
 
 
 .space-around {
-  -js-justify-content: space-around;
   justify-content: space-around;
 }
 
 .space-between {
-  -js-justify-content: space-between;
   justify-content: space-between;
 }
