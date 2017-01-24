@@ -47,3 +47,10 @@
 .space-between {
   justify-content: space-between;
 }
+
+.no-flexbox {
+  .row,
+  .column {
+    display: table-cell;
+  }
+}
