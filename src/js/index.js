@@ -1,4 +1,5 @@
 import '../styles/main.scss';
+const modernizr = require('./modernizr-flexbox.js');
 
 const examples = document.getElementsByClassName("example");
 
