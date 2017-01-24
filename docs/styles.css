@@ -409,6 +409,9 @@
     justify-content: space-around; }
   .space-between {
     justify-content: space-between; }
+  .no-flexbox .row,
+  .no-flexbox .column {
+    display: table-cell; }
   pre {
     overflow-x: auto; }
 

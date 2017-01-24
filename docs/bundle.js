@@ -63,56 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
-
-throw new Error("Module parse failed: /Users/jacruesi/Documents/Projects/FlexGrid/src/styles/main.scss Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| :global {\n|   @import 'normalize';\n|   @import 'colors';");
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(0);
-
-var modernizr = __webpack_require__(2);
-
-var examples = document.getElementsByClassName("example");
-
-var _iteratorNormalCompletion = true;
-var _didIteratorError = false;
-var _iteratorError = undefined;
-
-try {
-  for (var _iterator = examples[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-    var example = _step.value;
-
-    var prettyprint = example.nextElementSibling;
-    prettyprint.textContent = example.innerHTML;
-  }
-} catch (err) {
-  _didIteratorError = true;
-  _iteratorError = err;
-} finally {
-  try {
-    if (!_iteratorNormalCompletion && _iterator.return) {
-      _iterator.return();
-    }
-  } finally {
-    if (_didIteratorError) {
-      throw _iteratorError;
-    }
-  }
-}
-
-/***/ },
-/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -225,6 +180,51 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     Modernizr._q[z]();
   }e.Modernizr = Modernizr;
 }(window, document);
+
+/***/ },
+/* 1 */
+/***/ function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(1);
+
+var modernizr = __webpack_require__(0);
+
+var examples = document.getElementsByClassName("example");
+
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
+
+try {
+  for (var _iterator = examples[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    var example = _step.value;
+
+    var prettyprint = example.nextElementSibling;
+    prettyprint.textContent = example.innerHTML;
+  }
+} catch (err) {
+  _didIteratorError = true;
+  _iteratorError = err;
+} finally {
+  try {
+    if (!_iteratorNormalCompletion && _iterator.return) {
+      _iterator.return();
+    }
+  } finally {
+    if (_didIteratorError) {
+      throw _iteratorError;
+    }
+  }
+}
 
 /***/ }
 /******/ ]);
