@@ -1,0 +1,26 @@
+{
+  "name": "flexgrid",
+  "version": "1.0.0",
+  "description": "a simple grid solution using flexbox",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "jaruesink@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-env": "^1.1.5",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "html-webpack-plugin": "^2.26.0",
+    "image-webpack-loader": "^3.1.0",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0-rc.3"
+  }
+}
