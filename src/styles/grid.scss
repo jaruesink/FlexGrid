@@ -1,5 +1,6 @@
 .row,
 .column {
+  -js-display: flex;
   display: flex;
 
   > .grow-1 {
