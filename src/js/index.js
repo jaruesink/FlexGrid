@@ -1,5 +1,5 @@
 import '../styles/main.scss';
-const modernizr = require('./flexibility.js');
+const flexibility = require('./flexibility.js');
 
 const examples = document.getElementsByClassName("example");
 

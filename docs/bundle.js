@@ -319,7 +319,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 __webpack_require__(1);
 
-var modernizr = __webpack_require__(0);
+var flexibility = __webpack_require__(0);
 
 var examples = document.getElementsByClassName("example");
 
