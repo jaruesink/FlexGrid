@@ -1,0 +1,125 @@
+.row, .row * {
+  box-sizing: border-box;
+}
+
+$breakpoints: (
+  xs: 0,
+	sm: 512px,
+	md: 760px,
+	lg: 1012px,
+	xl: 1480px
+);
+
+$grid_gutter_x: 0px;
+$grid_gutter_y: $grid_gutter_x;
+
+
+$growth_levels: 4;
+
+@function breakpoint-value($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+}
+
+.row {
+  display: block;
+  flex-flow: row wrap;
+  margin: 0 -$grid_gutter_x;
+
+  > .flex_item {
+    padding: $grid_gutter_y $grid_gutter_x;
+  }
+
+  > .full_width {
+    width: 100%;
+    padding: $grid_gutter_y $grid_gutter_x;
+  }
+}
+
+.space_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space_around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.align_start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.align_end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.align_center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin build_grid ($size, $has_media_query: false) {
+  @if ($has_media_query == true) {
+    @media (min-width: breakpoint-value($size)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin build_growth($size, $separator) {
+  @for $i from 1 through $growth_levels {
+    .grow_#{$i}#{$separator}#{$size} {
+      flex: #{$i};
+    }
+  }
+}
+
+@mixin build_across($size, $separator) {
+  $name: 'two_across';
+  @for $i from 2 through $growth_levels {
+    @if $i == 3 {
+      $name: 'three_across';
+    }
+    @if $i == 4 {
+      $name: 'four_across';
+    }
+
+    .#{$name}#{$separator}#{$size} {
+      display: flex;
+
+      > .flex_item {
+        flex-basis: #{percentage(1/$i)};
+      }
+    }
+  }
+}
+
+@mixin build_flex_row($size, $separator) {
+	.flex#{$separator}#{$size} {
+		display: flex;
+	}
+}
+
+@each $key in map-keys($breakpoints) {
+  $hasMediaQuery: true;
+  $size: $key;
+	$separator: '_';
+
+  @if breakpoint-value($key) == 0 {
+    $hasMediaQuery: false;
+		$separator: '';
+    $size: '';
+  }
+
+  @include build_grid($key, $hasMediaQuery) {
+    @include build_growth($size, $separator);
+		@include build_flex_row($size, $separator);
+		@include build_across($size, $separator);
+  }
+}
