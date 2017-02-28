@@ -1,0 +1,7 @@
+linters:
+  SingleLinePerSelector:
+    enabled: false
+  NameFormat:
+    enabled: false
+  SelectorFormat:
+    enabled: false
