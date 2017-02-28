@@ -1,11 +1,12 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Autoprefixer = require('Autoprefixer');
 
 const config = {
   entry: './src/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist/docs'),
     filename: 'bundle.js'
   },
   devtool: 'source-map',
@@ -18,15 +19,22 @@ const config = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({
-          fallbackLoader: "style-loader",
-          loader: [{
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: [
+                  {
                     loader: 'css-loader',
-                    query: { modules: true, sourceMap: true }
+                    options: { modules: true, sourceMap: true }
+                  },
+                  {
+                    loader: 'postcss-loader',
+                    options: {
+                      plugins() { return [Autoprefixer] }
+                    }
                   },
                   {
                     loader: 'sass-loader',
-                    query: { sourceMap: true }
+                    options: { sourceMap: true }
                   }],
         })
       },

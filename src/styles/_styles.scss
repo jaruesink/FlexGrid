@@ -1,0 +1,26 @@
+body {
+  background: $gray;
+  margin: 10px 30px;
+}
+
+pre {
+  background: $white;
+  overflow-x: scroll;
+  margin: 20px 0;
+  xmp {
+    margin: 10px 15px;
+  }
+}
+
+.row {
+  margin-bottom: 40px !important;
+  background: $white;
+  box-shadow: 0 0 1px 0 $black;
+
+  p {
+    margin: 0;
+    display: block;
+    padding: 10px;
+    box-shadow: inset 0 0 1px 0 $blue;
+  }
+}

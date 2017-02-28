@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,75 +11,167 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
   <![endif]-->
 </head>
+
 <body>
-  <h1 class="text-center">Welcome to FlexGrid</h1>
-  <h4 class="text-center">a simple grid solution with flexbox</h4>
-  <div class="container">
-    <code class="example">
-      <div class="box row align-start border-solid">
-        <div class="box border-dashed">1</div>
-        <div class="box border-dashed">2</div>
-        <div class="box border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row align-center border-solid">
-        <div class="box border-dashed">1</div>
-        <div class="box border-dashed">2</div>
-        <div class="box border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row align-end border-solid">
-        <div class="box border-dashed">1</div>
-        <div class="box border-dashed">2</div>
-        <div class="box border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row space-around border-solid">
-        <div class="box border-dashed">1</div>
-        <div class="box border-dashed">2</div>
-        <div class="box border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row space-between border-solid">
-        <div class="box border-dashed">1</div>
-        <div class="box border-dashed">2</div>
-        <div class="box border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row border-solid">
-        <div class="grow-1 border-dashed">1</div>
-        <div class="grow-1 border-dashed">2</div>
-        <div class="grow-1 border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row border-solid">
-        <div class="grow-1 border-dashed">1</div>
-        <div class="grow-1 border-dashed">2</div>
-        <div class="grow-2 border-dashed">3</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
-    <code class="example">
-      <div class="box row border-solid">
-        <div class="grow-1 border-dashed">1</div>
-        <div class="grow-2 border-dashed">2</div>
-        <div class="grow-3 border-dashed">3</div>
-        <div class="grow-4 border-dashed">4</div>
-      </div>
-    </code>
-    <pre class="prettyprint"></pre>
+
+  <h1>Welcome to Flex Grid</h1>
+  <p>A collaboration project with @jaruesink, @gpfaff and @LZoog.</p>
+  <hr/>
+  <h2>Basic Usage</h2>
+  <div class="row flex">
+    <div class="flex_item">
+      <p>1</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
   </div>
+  <div class="row flex align_end">
+    <div class="flex_item">
+      <p>1</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex align_center">
+    <div class="flex_item">
+      <p>1</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex space_around">
+    <div class="flex_item">
+      <p>1</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex space_between">
+    <div class="flex_item">
+      <p>1</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="flex_item grow_1">
+      <p>Items can fill space</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>2</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="full_width">
+      <p>Full Width Content</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>1</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>2</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="flex_item grow_2">
+      <p>Grows 2x</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>2</p>
+    </div>
+    <div class="flex_item grow_1">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row flex">
+    <div class="flex_item grow_1">
+      <p>1</p>
+    </div>
+    <div class="flex_item grow_2">
+      <p>2</p>
+    </div>
+    <div class="flex_item grow_3">
+      <p>3</p>
+    </div>
+    <div class="flex_item grow_4">
+      <p>Four levels of growth</p>
+    </div>
+  </div>
+  <div class="row two_across">
+    <div class="flex_item">
+      <p>Shorthand classes</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+  </div>
+  <div class="row three_across">
+    <div class="flex_item">
+      <p>Shorthand classes</p>
+    </div>
+    <div class="flex_item">
+      <p>2</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
+  </div>
+  <div class="row four_across_sm">
+    <div class="flex_item">
+      <p>Only up to four across</p>
+    </div>
+    <div class="flex_item">
+      <p>and can be responsive</p>
+    </div>
+    <div class="flex_item">
+      <p>3</p>
+    </div>
+    <div class="flex_item">
+      <p>4</p>
+    </div>
+  </div>
+  <hr/>
+  <h2>More Responsive Examples</h2>
+  <div class="row flex">
+    <div class="flex_item grow_4 grow_1_sm">
+      <p>we change</p>
+    </div>
+    <div class="flex_item grow_1 grow_4_sm grow_1_md">
+      <p>when the</p>
+    </div>
+    <div class="flex_item grow_1 grow_4_md grow_1_lg">
+      <p>browser width</p>
+    </div>
+    <div class="flex_item grow_1 grow_4_lg">
+      <p>changes</p>
+    </div>
+  </div>
+
 </body>
 </html>
