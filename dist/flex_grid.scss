@@ -10,8 +10,9 @@ $breakpoints: (
 	xl: 1480px
 );
 
-$grid_gutter_x: 0;
+$grid_gutter_x: 0px;
 $grid_gutter_y: $grid_gutter_x;
+
 
 $growth_levels: 4;
 
@@ -24,15 +25,15 @@ $growth_levels: 4;
 .row {
   display: block;
   flex-flow: row wrap;
-  margin: 0 (-$grid_gutter_x);
+  margin: 0 -$grid_gutter_x;
 
   > .flex_item {
     padding: $grid_gutter_y $grid_gutter_x;
   }
 
   > .full_width {
-    padding: $grid_gutter_y $grid_gutter_x;
     width: 100%;
+    padding: $grid_gutter_y $grid_gutter_x;
   }
 }
 
@@ -93,22 +94,22 @@ $growth_levels: 4;
       display: flex;
 
       > .flex_item {
-        flex-basis: #{percentage(1 / $i)};
+        flex-basis: #{percentage(1/$i)};
       }
     }
   }
 }
 
 @mixin build_flex_row($size, $separator) {
-  .flex#{$separator}#{$size} {
-    display: flex;
-  }
+	.flex#{$separator}#{$size} {
+		display: flex;
+	}
 }
 
 @each $key in map-keys($breakpoints) {
   $hasMediaQuery: true;
   $size: $key;
-  $separator: '_';
+	$separator: '_';
 
   @if breakpoint-value($key) == 0 {
     $hasMediaQuery: false;
@@ -118,7 +119,7 @@ $growth_levels: 4;
 
   @include build_grid($key, $hasMediaQuery) {
     @include build_growth($size, $separator);
-    @include build_flex_row($size, $separator);
-    @include build_across($size, $separator);
+		@include build_flex_row($size, $separator);
+		@include build_across($size, $separator);
   }
 }
