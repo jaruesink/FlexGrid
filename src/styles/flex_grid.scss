@@ -10,9 +10,8 @@ $breakpoints: (
 	xl: 1480px
 );
 
-$grid_gutter_x: 0px;
-$grid_gutter_y: $grid_gutter_x;
-
+$grid_gutter_x: 16px;
+$grid_gutter_y: 8px;
 
 $growth_levels: 4;
 
@@ -25,40 +24,33 @@ $growth_levels: 4;
 .row {
   display: block;
   flex-flow: row wrap;
-  margin: 0 -$grid_gutter_x;
-
-  > .flex_item {
-    padding: $grid_gutter_y $grid_gutter_x;
-  }
+	
+	&.gutter > .flex_item {
+		margin: $grid_gutter_y $grid_gutter_x;
+	}
 
   > .full_width {
     width: 100%;
-    padding: $grid_gutter_y $grid_gutter_x;
   }
 }
 
 .space_between {
-  display: flex;
   justify-content: space-between;
 }
 
 .space_around {
-  display: flex;
   justify-content: space-around;
 }
 
 .align_start {
-  display: flex;
   justify-content: flex-start;
 }
 
 .align_end {
-  display: flex;
   justify-content: flex-end;
 }
 
 .align_center {
-  display: flex;
   justify-content: center;
 }
 
@@ -94,8 +86,11 @@ $growth_levels: 4;
       display: flex;
 
       > .flex_item {
-        flex-basis: #{percentage(1/$i)};
+        flex-basis: calc(#{percentage(1/$i)});
       }
+			&.gutter > .flex_item {
+				flex-basis: calc(#{percentage(1/$i)} - #{$grid_gutter_x} * 2);
+			}
     }
   }
 }

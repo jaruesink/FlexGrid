@@ -83,11 +83,13 @@ __webpack_require__(0);
 
 var examples = document.querySelectorAll('.row');
 examples.forEach(function (example) {
-  var code_example = document.createElement('pre');
-  var html = example.outerHTML;
-  code_example.innerHTML = '<xmp>' + html + '</xmp>';
-  code_example.className = 'prettyprint lang-html';
-  document.body.insertBefore(code_example, example);
+  if (example.parentElement.className.indexOf('flex_item') === -1) {
+    var code_example = document.createElement('pre');
+    var html = example.outerHTML;
+    code_example.innerHTML = '<xmp>' + html + '</xmp>';
+    code_example.className = 'prettyprint lang-html';
+    document.body.insertBefore(code_example, example);
+  }
 });
 
 /***/ })
