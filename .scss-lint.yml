@@ -1,4 +1,6 @@
 linters:
+  ColorVariable:
+    enabled: false
   SingleLinePerSelector:
     enabled: false
   NameFormat:

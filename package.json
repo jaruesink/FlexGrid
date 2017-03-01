@@ -1,15 +1,15 @@
 {
-  "name": "flexgrid",
+  "name": "flex_grid",
   "version": "1.0.0",
-  "description": "a simple grid solution using flexbox",
+  "description": "a simple class based grid solution using flexbox",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build",
     "build": "npm run export_css && webpack",
     "dev": "webpack --watch",
+    "export_css": "node export_flex_grid.js && npm run minify_css && npm run post_css",
     "minify_css": "node-sass --output-style compressed --include-path dist dist/flex_grid.scss dist/flex_grid.min.css",
     "post_css": "postcss dist/flex_grid.min.css -u autoprefixer -o dist/flex_grid.min.css --no-map",
-    "export_css": "node export_flex_grid.js && npm run minify_css && npm run post_css"
+    "start": "npm run build"
   },
   "author": "jaruesink@gmail.com",
   "license": "ISC",
