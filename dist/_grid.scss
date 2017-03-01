@@ -1,0 +1,107 @@
+.row, .row * {
+  box-sizing: border-box;
+}
+
+@function breakpoint-value($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+}
+
+.row {
+  display: block;
+  flex-flow: row wrap;
+  
+  &.gutter > .flex_item {
+    margin: $grid_gutter_y $grid_gutter_x;
+  }
+
+  > .full_width {
+    width: 100%;
+  }
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.space_around {
+  justify-content: space-around;
+}
+
+.align_start {
+  justify-content: flex-start;
+}
+
+.align_end {
+  justify-content: flex-end;
+}
+
+.align_center {
+  justify-content: center;
+}
+
+@mixin build_grid ($size, $has_media_query: false) {
+  @if ($has_media_query == true) {
+    @media (min-width: breakpoint-value($size)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin build_growth($size, $separator) {
+  @for $i from 1 through $growth_levels {
+    .grow_#{$i}#{$separator}#{$size} {
+      flex: #{$i};
+    }
+  }
+}
+
+@mixin build_across($size, $separator) {
+  $name: 'two_across';
+  @for $i from 2 through $growth_levels {
+    @if $i == 3 {
+      $name: 'three_across';
+    }
+    @if $i == 4 {
+      $name: 'four_across';
+    }
+
+    .#{$name}#{$separator}#{$size} {
+      display: flex;
+
+      > .flex_item {
+        flex-basis: calc(#{percentage(1/$i)});
+      }
+      &.gutter > .flex_item {
+        flex-basis: calc(#{percentage(1/$i)} - #{$grid_gutter_x} * 2);
+      }
+    }
+  }
+}
+
+@mixin build_flex_row($size, $separator) {
+  .flex#{$separator}#{$size} {
+    display: flex;
+  }
+}
+
+@each $key in map-keys($breakpoints) {
+  $hasMediaQuery: true;
+  $size: $key;
+  $separator: '_';
+
+  @if breakpoint-value($key) == 0 {
+    $hasMediaQuery: false;
+    $separator: '';
+    $size: '';
+  }
+
+  @include build_grid($key, $hasMediaQuery) {
+    @include build_growth($size, $separator);
+    @include build_flex_row($size, $separator);
+    @include build_across($size, $separator);
+  }
+}
