@@ -6,7 +6,7 @@ const flex_grid = path.resolve(__dirname, 'src/styles/flex_grid.scss');
 const grid_variables = path.resolve(__dirname, 'src/styles/_grid_variables.scss');
 const export_path = path.resolve(__dirname, 'dist');
 
-// remove current flex_grid to rebuild new one
+// remove current flex_grids to rebuild new one
 if (fs.existsSync(`${export_path}/_grid.scss`)) {
 	fs.unlinkSync(`${export_path}/_grid.scss`);
 }
