@@ -15,7 +15,7 @@
 .row {
   display: block;
   flex-flow: row wrap;
-  
+
   &.gutter > .flex_item {
     margin: $grid_gutter_y $grid_gutter_x;
   }
@@ -23,26 +23,6 @@
   > .full_width {
     width: 100%;
   }
-}
-
-.space_between {
-  justify-content: space-between;
-}
-
-.space_around {
-  justify-content: space-around;
-}
-
-.align_start {
-  justify-content: flex-start;
-}
-
-.align_end {
-  justify-content: flex-end;
-}
-
-.align_center {
-  justify-content: center;
 }
 
 @mixin build_grid ($size, $has_media_query: false) {
@@ -63,6 +43,28 @@
   }
 }
 
+@mixin build_alignments($size, $separator) {
+  .space_between#{$separator}#{$size} {
+    justify-content: space-between;
+  }
+
+  .space_around#{$separator}#{$size} {
+    justify-content: space-around;
+  }
+
+  .align_start#{$separator}#{$size} {
+    justify-content: flex-start;
+  }
+
+  .align_end#{$separator}#{$size} {
+    justify-content: flex-end;
+  }
+
+  .align_center#{$separator}#{$size} {
+    justify-content: center;
+  }
+}
+
 @mixin build_across($size, $separator) {
   $name: 'two_across';
   @for $i from 2 through $growth_levels {
@@ -77,10 +79,11 @@
       display: flex;
 
       > .flex_item {
-        flex-basis: calc(#{percentage(1/$i)});
+        flex-basis: #{percentage(1 / $i)};
       }
+
       &.gutter > .flex_item {
-        flex-basis: calc(#{percentage(1/$i)} - #{$grid_gutter_x} * 2);
+        flex-basis: calc(#{percentage(1 / $i)} - #{$grid_gutter_x} * 2);
       }
     }
   }
@@ -107,5 +110,6 @@
     @include build_growth($size, $separator);
     @include build_flex_row($size, $separator);
     @include build_across($size, $separator);
+    @include build_alignments($size, $separator);
   }
 }
