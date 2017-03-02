@@ -396,25 +396,6 @@
       margin: 8px 16px; }
     .row > .full_width {
       width: 100%; }
-  .space_between {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .space_around {
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-  .align_start {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-  .align_end {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-  .align_center {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .grow_1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -440,8 +421,8 @@
     display: -ms-flexbox;
     display: flex; }
     .two_across > .flex_item {
-      -ms-flex-preferred-size: calc(50%);
-          flex-basis: calc(50%); }
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
     .two_across.gutter > .flex_item {
       -ms-flex-preferred-size: calc(50% - 16px * 2);
           flex-basis: calc(50% - 16px * 2); }
@@ -450,8 +431,8 @@
     display: -ms-flexbox;
     display: flex; }
     .three_across > .flex_item {
-      -ms-flex-preferred-size: calc(33.33333%);
-          flex-basis: calc(33.33333%); }
+      -ms-flex-preferred-size: 33.33333%;
+          flex-basis: 33.33333%; }
     .three_across.gutter > .flex_item {
       -ms-flex-preferred-size: calc(33.33333% - 16px * 2);
           flex-basis: calc(33.33333% - 16px * 2); }
@@ -460,11 +441,30 @@
     display: -ms-flexbox;
     display: flex; }
     .four_across > .flex_item {
-      -ms-flex-preferred-size: calc(25%);
-          flex-basis: calc(25%); }
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
     .four_across.gutter > .flex_item {
       -ms-flex-preferred-size: calc(25% - 16px * 2);
           flex-basis: calc(25% - 16px * 2); }
+  .space_between {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .space_around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .align_start {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .align_end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .align_center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   @media (min-width: 512px) {
     .grow_1_sm {
       -webkit-box-flex: 1;
@@ -491,8 +491,8 @@
       display: -ms-flexbox;
       display: flex; }
       .two_across_sm > .flex_item {
-        -ms-flex-preferred-size: calc(50%);
-            flex-basis: calc(50%); }
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
       .two_across_sm.gutter > .flex_item {
         -ms-flex-preferred-size: calc(50% - 16px * 2);
             flex-basis: calc(50% - 16px * 2); }
@@ -501,8 +501,8 @@
       display: -ms-flexbox;
       display: flex; }
       .three_across_sm > .flex_item {
-        -ms-flex-preferred-size: calc(33.33333%);
-            flex-basis: calc(33.33333%); }
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%; }
       .three_across_sm.gutter > .flex_item {
         -ms-flex-preferred-size: calc(33.33333% - 16px * 2);
             flex-basis: calc(33.33333% - 16px * 2); }
@@ -511,11 +511,30 @@
       display: -ms-flexbox;
       display: flex; }
       .four_across_sm > .flex_item {
-        -ms-flex-preferred-size: calc(25%);
-            flex-basis: calc(25%); }
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; }
       .four_across_sm.gutter > .flex_item {
         -ms-flex-preferred-size: calc(25% - 16px * 2);
-            flex-basis: calc(25% - 16px * 2); } }
+            flex-basis: calc(25% - 16px * 2); }
+    .space_between_sm {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .space_around_sm {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .align_start_sm {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .align_end_sm {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .align_center_sm {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   @media (min-width: 760px) {
     .grow_1_md {
       -webkit-box-flex: 1;
@@ -542,8 +561,8 @@
       display: -ms-flexbox;
       display: flex; }
       .two_across_md > .flex_item {
-        -ms-flex-preferred-size: calc(50%);
-            flex-basis: calc(50%); }
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
       .two_across_md.gutter > .flex_item {
         -ms-flex-preferred-size: calc(50% - 16px * 2);
             flex-basis: calc(50% - 16px * 2); }
@@ -552,8 +571,8 @@
       display: -ms-flexbox;
       display: flex; }
       .three_across_md > .flex_item {
-        -ms-flex-preferred-size: calc(33.33333%);
-            flex-basis: calc(33.33333%); }
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%; }
       .three_across_md.gutter > .flex_item {
         -ms-flex-preferred-size: calc(33.33333% - 16px * 2);
             flex-basis: calc(33.33333% - 16px * 2); }
@@ -562,11 +581,30 @@
       display: -ms-flexbox;
       display: flex; }
       .four_across_md > .flex_item {
-        -ms-flex-preferred-size: calc(25%);
-            flex-basis: calc(25%); }
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; }
       .four_across_md.gutter > .flex_item {
         -ms-flex-preferred-size: calc(25% - 16px * 2);
-            flex-basis: calc(25% - 16px * 2); } }
+            flex-basis: calc(25% - 16px * 2); }
+    .space_between_md {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .space_around_md {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .align_start_md {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .align_end_md {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .align_center_md {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   @media (min-width: 1012px) {
     .grow_1_lg {
       -webkit-box-flex: 1;
@@ -593,8 +631,8 @@
       display: -ms-flexbox;
       display: flex; }
       .two_across_lg > .flex_item {
-        -ms-flex-preferred-size: calc(50%);
-            flex-basis: calc(50%); }
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
       .two_across_lg.gutter > .flex_item {
         -ms-flex-preferred-size: calc(50% - 16px * 2);
             flex-basis: calc(50% - 16px * 2); }
@@ -603,8 +641,8 @@
       display: -ms-flexbox;
       display: flex; }
       .three_across_lg > .flex_item {
-        -ms-flex-preferred-size: calc(33.33333%);
-            flex-basis: calc(33.33333%); }
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%; }
       .three_across_lg.gutter > .flex_item {
         -ms-flex-preferred-size: calc(33.33333% - 16px * 2);
             flex-basis: calc(33.33333% - 16px * 2); }
@@ -613,11 +651,30 @@
       display: -ms-flexbox;
       display: flex; }
       .four_across_lg > .flex_item {
-        -ms-flex-preferred-size: calc(25%);
-            flex-basis: calc(25%); }
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; }
       .four_across_lg.gutter > .flex_item {
         -ms-flex-preferred-size: calc(25% - 16px * 2);
-            flex-basis: calc(25% - 16px * 2); } }
+            flex-basis: calc(25% - 16px * 2); }
+    .space_between_lg {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .space_around_lg {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .align_start_lg {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .align_end_lg {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .align_center_lg {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   @media (min-width: 1480px) {
     .grow_1_xl {
       -webkit-box-flex: 1;
@@ -644,8 +701,8 @@
       display: -ms-flexbox;
       display: flex; }
       .two_across_xl > .flex_item {
-        -ms-flex-preferred-size: calc(50%);
-            flex-basis: calc(50%); }
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
       .two_across_xl.gutter > .flex_item {
         -ms-flex-preferred-size: calc(50% - 16px * 2);
             flex-basis: calc(50% - 16px * 2); }
@@ -654,8 +711,8 @@
       display: -ms-flexbox;
       display: flex; }
       .three_across_xl > .flex_item {
-        -ms-flex-preferred-size: calc(33.33333%);
-            flex-basis: calc(33.33333%); }
+        -ms-flex-preferred-size: 33.33333%;
+            flex-basis: 33.33333%; }
       .three_across_xl.gutter > .flex_item {
         -ms-flex-preferred-size: calc(33.33333% - 16px * 2);
             flex-basis: calc(33.33333% - 16px * 2); }
@@ -664,10 +721,29 @@
       display: -ms-flexbox;
       display: flex; }
       .four_across_xl > .flex_item {
-        -ms-flex-preferred-size: calc(25%);
-            flex-basis: calc(25%); }
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; }
       .four_across_xl.gutter > .flex_item {
         -ms-flex-preferred-size: calc(25% - 16px * 2);
-            flex-basis: calc(25% - 16px * 2); } }
+            flex-basis: calc(25% - 16px * 2); }
+    .space_between_xl {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .space_around_xl {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .align_start_xl {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .align_end_xl {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+    .align_center_xl {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 /*# sourceMappingURL=styles.css.map*/
