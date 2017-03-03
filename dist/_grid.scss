@@ -1,28 +1,42 @@
-@function breakpoint-value($key) {
-  @if map-has-key($breakpoints, $key) {
-    @return map-get($breakpoints, $key);
+@function breakpoint-value($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @return map-get($breakpoints, $breakpoint);
   }
 }
 
-@function shorthand-name($key) {
-  @if map-has-key($shorthands, $key) {
-    @return map-get($shorthands, $key);
+@function shorthand-name($shorthand) {
+  @if map-has-key($shorthands, $shorthand) {
+    @return map-get($shorthands, $shorthand);
   }
 }
 
-@function requires-media-query($key) {
-  @if (breakpoint-value($key) == 0) {
+@function requires-media-query($breakpoint) {
+  @if (breakpoint-value($breakpoint) == 0) {
     @return false;
   }
   @return true;
 }
 
-@function requires-extension($key) {
-  @if (requires-media-query($key)) {
-    @return '_#{$key}';
+@function breakpoint-extension($breakpoint) {
+  @if (requires-media-query($breakpoint)) {
+    @return '_#{$breakpoint}';
   }
   @return '';
 }
+
+$shorthands: (
+  2: 'two_across',
+	3: 'three_across',
+	4: 'four_across',
+  5: 'five_across',
+  6: 'six_across',
+  7: 'seven_across',
+  8: 'eight_across',
+  9: 'nine_across',
+  10: 'ten_across',
+  11: 'eleven_across',
+  12: 'twelve_across'
+);
 
 .row, .row * {
   box-sizing: border-box;
@@ -45,9 +59,9 @@
   }
 }
 
-@mixin build_media_queries($key) {
-  @if (requires-media-query($key)) {
-    @media (min-width: breakpoint-value($key)) {
+@mixin build_media_queries($breakpoint) {
+  @if (requires-media-query($breakpoint)) {
+    @media (min-width: breakpoint-value($breakpoint)) {
       @content;
     }
   } @else {
@@ -55,72 +69,68 @@
   }
 }
 
-@mixin build_growth($key) {
-  @for $i from 1 through $growth_levels {
-    .grow_#{$i}#{requires-extension($key)} {
-      flex: #{$i};
+@mixin build_grows($breakpoint) {
+  @for $grow_level from 1 through $grow_levels {
+    .grow_#{$grow_level}#{breakpoint-extension($breakpoint)} {
+      flex: #{$grow_level};
     }
   }
 }
 
-@mixin build_alignments($key) {
-  .space_between#{requires-extension($key)} {
+@mixin build_flex_rows($breakpoint) {
+  .flex#{breakpoint-extension($breakpoint)} {
+    display: flex;
+  }
+}
+
+@mixin build_alignments($breakpoint) {
+  .space_between#{breakpoint-extension($breakpoint)} {
     justify-content: space-between;
   }
 
-  .space_around#{requires-extension($key)} {
+  .space_around#{breakpoint-extension($breakpoint)} {
     justify-content: space-around;
   }
 
-  .align_start#{requires-extension($key)} {
+  .align_start#{breakpoint-extension($breakpoint)} {
     justify-content: flex-start;
   }
 
-  .align_end#{requires-extension($key)} {
+  .align_end#{breakpoint-extension($breakpoint)} {
     justify-content: flex-end;
   }
 
-  .align_center#{requires-extension($key)} {
+  .align_center#{breakpoint-extension($breakpoint)} {
     justify-content: center;
   }
 }
 
-$shorthands: (
-  2: 'two_across',
-	3: 'three_across',
-	4: 'four_across',
-);
+@mixin build_shorthands($breakpoint) {
+  @for $grow_level from 2 through $grow_levels {
+    .#{shorthand-name($grow_level)}#{breakpoint-extension($breakpoint)} {
+      display: flex;
 
-@mixin build_across_shorthands($growth_level, $key) {
-  .#{shorthand-name($growth_level)}#{requires-extension($key)} {
-    display: flex;
+      > .flex_item {
+        flex-basis: #{percentage(1 / $grow_level)};
+      }
 
-    > .flex_item {
-      flex-basis: #{percentage(1 / $growth_level)};
-    }
-
-    &.gutter > .flex_item {
-      flex-basis: calc(#{percentage(1 / $growth_level)} - #{$grid_gutter_x} * 2);
+      &.gutter > .flex_item {
+        flex-basis: calc(#{percentage(1 / $grow_level)} - #{$grid_gutter_x} * 2);
+      }
     }
   }
 };
 
-@mixin build_across($key) {
-  @for $growth_level from 2 through $growth_levels {
-    @include build_across_shorthands($growth_level, $key);
-  }
-}
+@mixin build_shorthand_grows() {
+  @for $grow_level from 2 through $grow_levels {
+    $shorthand: shorthand-name($grow_level);
+    @for $i from 2 through $grow_level {
+      @each $breakpoint in map-keys($breakpoints) {
+        $extension: breakpoint-extension($breakpoint);
 
-@mixin build_across_growth() {
-  @for $growth_level from 2 through $growth_levels {
-    $shorthand_name: shorthand-name($growth_level);
-    @for $i from 2 through $growth_level {
-      @each $key in map-keys($breakpoints) {
-        $extension: requires-extension($key);
-
-        @include build_media_queries($key) {
-          [class*='#{$shorthand_name}'] > .grow_#{$i}#{$extension} {
-            flex-basis: calc(#{percentage(1 / $growth_level)} * #{$i});
+        @include build_media_queries($breakpoint) {
+          [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
+            flex-basis: calc(#{percentage(1 / $grow_level)} * #{$i});
           }
         }
       }
@@ -128,19 +138,13 @@ $shorthands: (
   }
 }
 
-@mixin build_flex_row($key) {
-  .flex#{requires-extension($key)} {
-    display: flex;
-  }
-}
-
 // BUIlD EVERYTHING
-@each $key in map-keys($breakpoints) {
-  @include build_media_queries($key) {
-    @include build_growth($key);
-    @include build_flex_row($key);
-    @include build_across($key);
-    @include build_alignments($key);
+@each $breakpoint in map-keys($breakpoints) {
+  @include build_media_queries($breakpoint) {
+    @include build_grows($breakpoint);
+    @include build_flex_rows($breakpoint);
+    @include build_shorthands($breakpoint);
+    @include build_alignments($breakpoint);
   }
 }
-@include build_across_growth();
+@include build_shorthand_grows();
