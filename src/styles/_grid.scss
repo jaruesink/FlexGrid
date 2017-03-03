@@ -1,11 +1,31 @@
-.row, .row * {
-  box-sizing: border-box;
-}
-
 @function breakpoint-value($key) {
   @if map-has-key($breakpoints, $key) {
     @return map-get($breakpoints, $key);
   }
+}
+
+@function shorthand-name($key) {
+  @if map-has-key($shorthands, $key) {
+    @return map-get($shorthands, $key);
+  }
+}
+
+@function requires-media-query($key) {
+  @if (breakpoint-value($key) == 0) {
+    @return false;
+  }
+  @return true;
+}
+
+@function requires-extension($key) {
+  @if (requires-media-query($key)) {
+    @return '_#{$key}';
+  }
+  @return '';
+}
+
+.row, .row * {
+  box-sizing: border-box;
 }
 
 .gutter {
@@ -25,9 +45,9 @@
   }
 }
 
-@mixin build_grid ($size, $has_media_query: false) {
-  @if ($has_media_query == true) {
-    @media (min-width: breakpoint-value($size)) {
+@mixin build_media_queries($key) {
+  @if (requires-media-query($key)) {
+    @media (min-width: breakpoint-value($key)) {
       @content;
     }
   } @else {
@@ -35,81 +55,92 @@
   }
 }
 
-@mixin build_growth($size, $separator) {
+@mixin build_growth($key) {
   @for $i from 1 through $growth_levels {
-    .grow_#{$i}#{$separator}#{$size} {
+    .grow_#{$i}#{requires-extension($key)} {
       flex: #{$i};
     }
   }
 }
 
-@mixin build_alignments($size, $separator) {
-  .space_between#{$separator}#{$size} {
+@mixin build_alignments($key) {
+  .space_between#{requires-extension($key)} {
     justify-content: space-between;
   }
 
-  .space_around#{$separator}#{$size} {
+  .space_around#{requires-extension($key)} {
     justify-content: space-around;
   }
 
-  .align_start#{$separator}#{$size} {
+  .align_start#{requires-extension($key)} {
     justify-content: flex-start;
   }
 
-  .align_end#{$separator}#{$size} {
+  .align_end#{requires-extension($key)} {
     justify-content: flex-end;
   }
 
-  .align_center#{$separator}#{$size} {
+  .align_center#{requires-extension($key)} {
     justify-content: center;
   }
 }
 
-@mixin build_across($size, $separator) {
-  $name: 'two_across';
-  @for $i from 2 through $growth_levels {
-    @if $i == 3 {
-      $name: 'three_across';
+$shorthands: (
+  2: 'two_across',
+	3: 'three_across',
+	4: 'four_across',
+);
+
+@mixin build_across_shorthands($growth_level, $key) {
+  .#{shorthand-name($growth_level)}#{requires-extension($key)} {
+    display: flex;
+
+    > .flex_item {
+      flex-basis: #{percentage(1 / $growth_level)};
     }
-    @if $i == 4 {
-      $name: 'four_across';
+
+    &.gutter > .flex_item {
+      flex-basis: calc(#{percentage(1 / $growth_level)} - #{$grid_gutter_x} * 2);
     }
+  }
+};
 
-    .#{$name}#{$separator}#{$size} {
-      display: flex;
+@mixin build_across($key) {
+  @for $growth_level from 2 through $growth_levels {
+    @include build_across_shorthands($growth_level, $key);
+  }
+}
 
-      > .flex_item {
-        flex-basis: #{percentage(1 / $i)};
-      }
+@mixin build_across_growth() {
+  @for $growth_level from 2 through $growth_levels {
+    $shorthand_name: shorthand-name($growth_level);
+    @for $i from 2 through $growth_level {
+      @each $key in map-keys($breakpoints) {
+        $extension: requires-extension($key);
 
-      &.gutter > .flex_item {
-        flex-basis: calc(#{percentage(1 / $i)} - #{$grid_gutter_x} * 2);
+        @include build_media_queries($key) {
+          [class*='#{$shorthand_name}'] > .grow_#{$i}#{$extension} {
+            flex-basis: calc(#{percentage(1 / $growth_level)} * #{$i});
+          }
+        }
       }
     }
   }
 }
 
-@mixin build_flex_row($size, $separator) {
-  .flex#{$separator}#{$size} {
+@mixin build_flex_row($key) {
+  .flex#{requires-extension($key)} {
     display: flex;
   }
 }
 
+// BUIlD EVERYTHING
 @each $key in map-keys($breakpoints) {
-  $hasMediaQuery: true;
-  $size: $key;
-  $separator: '_';
-
-  @if breakpoint-value($key) == 0 {
-    $hasMediaQuery: false;
-    $separator: '';
-    $size: '';
-  }
-
-  @include build_grid($key, $hasMediaQuery) {
-    @include build_growth($size, $separator);
-    @include build_flex_row($size, $separator);
-    @include build_across($size, $separator);
-    @include build_alignments($size, $separator);
+  @include build_media_queries($key) {
+    @include build_growth($key);
+    @include build_flex_row($key);
+    @include build_across($key);
+    @include build_alignments($key);
   }
 }
+@include build_across_growth();
