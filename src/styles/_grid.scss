@@ -25,3 +25,6 @@
     @include build_alignments($breakpoint);
   }
 }
+
+// Builds our shorthand helper classes
+@include build_shorthand_grows();
