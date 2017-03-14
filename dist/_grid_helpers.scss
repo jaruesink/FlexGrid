@@ -1,0 +1,11 @@
+// Builds padding and margin helper classes
+@each $breakpoint in map-keys($breakpoints) {
+  @for $grow_level from 1 through $grow_levels {
+    @include build_media_queries($breakpoint) {
+      @include build_spacing_helpers($grow_level, $breakpoint);
+    }
+  }
+}
+
+// Builds our shorthand helper classes
+@include build_shorthand_grows();
