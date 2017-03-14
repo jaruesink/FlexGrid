@@ -60,18 +60,13 @@
   }
 };
 
-@mixin build_shorthand_grows() {
+@mixin build_shorthand_grows($breakpoint) {
+  $extension: breakpoint-extension($breakpoint);
   @for $grow_level from 2 through $grow_levels {
     $shorthand: shorthand-name($grow_level);
     @for $i from 2 through $grow_level {
-      @each $breakpoint in map-keys($breakpoints) {
-        $extension: breakpoint-extension($breakpoint);
-
-        @include build_media_queries($breakpoint) {
-          [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
-            flex-basis: calc(#{percentage(1 / $grow_level)} * #{$i});
-          }
-        }
+      [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
+        flex-basis: calc(#{percentage(1 / $grow_level)} * #{$i});
       }
     }
   }

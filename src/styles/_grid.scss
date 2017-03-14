@@ -23,8 +23,6 @@
     @include build_flex_rows($breakpoint);
     @include build_shorthands($breakpoint);
     @include build_alignments($breakpoint);
+    @include build_shorthand_grows($breakpoint);
   }
 }
-
-// Builds our shorthand helper classes
-@include build_shorthand_grows();
