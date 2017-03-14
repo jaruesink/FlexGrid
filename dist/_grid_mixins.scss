@@ -82,7 +82,9 @@
   @each $margin_key in map-keys($margins) {
     $margin_name: margin-name($margin_key);
     .#{$margin_name}#{$extension} {
-      @if $margin_key == 'x' {
+      @if $margin_key == 'all' {
+        margin: $margin * $grow_level;
+      } @elseif $margin_key == 'x' {
         margin-left: $margin * $grow_level;
         margin-right: $margin * $grow_level;
       } @elseif $margin_key == 'y' {
@@ -97,7 +99,9 @@
   @each $padding_key in map-keys($paddings) {
     $padding_name: padding-name($padding_key);
     .#{$padding_name}#{$extension} {
-      @if $padding_key == 'x' {
+      @if $padding_key == 'all' {
+        padding: $padding * $grow_level;
+      } @elseif $padding_key == 'x' {
         padding-left: $padding * $grow_level;
         padding-right: $padding * $grow_level;
       } @elseif $padding_key == 'y' {
