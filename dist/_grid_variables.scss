@@ -26,7 +26,8 @@ $paddings: (
   bottom: 'padding_bottom',
   left: 'padding_left',
   x: 'padding_x',
-  y: 'padding_y'
+  y: 'padding_y',
+  all: 'padding'
 );
 
 $margins: (
@@ -35,7 +36,8 @@ $margins: (
   bottom: 'margin_bottom',
   left: 'margin_left',
   x: 'margin_x',
-  y: 'margin_y'
+  y: 'margin_y',
+  all: 'margin'
 );
 
 $grid_gutter_x: 16px;
