@@ -1,50 +1,7 @@
-@function breakpoint-value($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @return map-get($breakpoints, $breakpoint);
-  }
-}
-
-@function shorthand-name($shorthand) {
-  @if map-has-key($shorthands, $shorthand) {
-    @return map-get($shorthands, $shorthand);
-  }
-}
-
-@function requires-media-query($breakpoint) {
-  @if (breakpoint-value($breakpoint) == 0) {
-    @return false;
-  }
-  @return true;
-}
-
-@function breakpoint-extension($breakpoint) {
-  @if (requires-media-query($breakpoint)) {
-    @return '_#{$breakpoint}';
-  }
-  @return '';
-}
-
-$shorthands: (
-  2: 'two_across',
-  3: 'three_across',
-  4: 'four_across',
-  5: 'five_across',
-  6: 'six_across',
-  7: 'seven_across',
-  8: 'eight_across',
-  9: 'nine_across',
-  10: 'ten_across',
-  11: 'eleven_across',
-  12: 'twelve_across'
-);
-
-.row, .row * {
-  box-sizing: border-box;
-}
-
-.gutter {
-  padding: .01% 0;
-}
+@import 'grid_mixins';
+@import 'grid_functions';
+@import 'grid_helpers';
+@import 'grid_fixes';
 
 .row {
   display: block;
@@ -59,85 +16,6 @@ $shorthands: (
   }
 }
 
-@mixin build_media_queries($breakpoint) {
-  @if (requires-media-query($breakpoint)) {
-    @media (min-width: breakpoint-value($breakpoint)) {
-      @content;
-    }
-  } @else {
-    @content;
-  }
-}
-
-@mixin build_grows($breakpoint) {
-  @for $grow_level from 1 through $grow_levels {
-    .grow_#{$grow_level}#{breakpoint-extension($breakpoint)} {
-      flex: #{$grow_level};
-    }
-  }
-}
-
-@mixin build_flex_rows($breakpoint) {
-  .flex#{breakpoint-extension($breakpoint)} {
-    display: flex;
-  }
-}
-
-@mixin build_alignments($breakpoint) {
-  .space_between#{breakpoint-extension($breakpoint)} {
-    justify-content: space-between;
-  }
-
-  .space_around#{breakpoint-extension($breakpoint)} {
-    justify-content: space-around;
-  }
-
-  .align_start#{breakpoint-extension($breakpoint)} {
-    justify-content: flex-start;
-  }
-
-  .align_end#{breakpoint-extension($breakpoint)} {
-    justify-content: flex-end;
-  }
-
-  .align_center#{breakpoint-extension($breakpoint)} {
-    justify-content: center;
-  }
-}
-
-@mixin build_shorthands($breakpoint) {
-  @for $grow_level from 2 through $grow_levels {
-    .#{shorthand-name($grow_level)}#{breakpoint-extension($breakpoint)} {
-      display: flex;
-
-      > .flex_item {
-        flex-basis: #{percentage(1 / $grow_level)};
-      }
-
-      &.gutter > .flex_item {
-        flex-basis: calc(#{percentage(1 / $grow_level)} - #{$grid_gutter_x} * 2);
-      }
-    }
-  }
-};
-
-@mixin build_shorthand_grows() {
-  @for $grow_level from 2 through $grow_levels {
-    $shorthand: shorthand-name($grow_level);
-    @for $i from 2 through $grow_level {
-      @each $breakpoint in map-keys($breakpoints) {
-        $extension: breakpoint-extension($breakpoint);
-
-        @include build_media_queries($breakpoint) {
-          [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
-            flex-basis: calc(#{percentage(1 / $grow_level)} * #{$i});
-          }
-        }
-      }
-    }
-  }
-}
-
 // BUIlD EVERYTHING
 @each $breakpoint in map-keys($breakpoints) {
   @include build_media_queries($breakpoint) {
@@ -145,6 +23,6 @@ $shorthands: (
     @include build_flex_rows($breakpoint);
     @include build_shorthands($breakpoint);
     @include build_alignments($breakpoint);
+    @include build_shorthand_grows($breakpoint);
   }
 }
-@include build_shorthand_grows();
