@@ -51,16 +51,34 @@
 
       > .flex_item {
         flex-basis: #{percentage(1 / $shorthand_level)};
-        @for $across_level from 2 through 12 {
-          &.across_#{$across_level} {
-            flex-basis: #{percentage($across_level / $shorthand_level)};
-          }
-        }
       }
 
       &.gutter > .flex_item {
         flex-basis: calc(#{percentage(1 / $shorthand_level)} - #{$grid_gutter_x} * 2);
-        @for $across_level from 2 through 12 {
+      }
+    }
+  }
+};
+
+@mixin build_across_helpers($shorthand_level, $breakpoint) {
+
+  // Allows a flex_item to fill the row when .two_across > .across_4
+  [class*='_across'] > .flex_item {
+    &[class*='across_'] {
+      flex-basis: 100%;
+    }
+  }
+
+  @for $across_level from 2 through 12 {
+    @if $across_level < $shorthand_level {
+      .#{shorthand-name($shorthand_level)}#{breakpoint-extension($breakpoint)} {
+        > .flex_item {
+          &.across_#{$across_level} {
+            flex-basis: #{percentage($across_level / $shorthand_level)};
+          }
+        }
+
+        &.gutter > .flex_item {
           &.across_#{$across_level} {
             flex-basis: calc(#{percentage($across_level / $shorthand_level)} - #{$grid_gutter_x} * 2);
           }
@@ -68,7 +86,8 @@
       }
     }
   }
-};
+
+}
 
 @mixin build_shorthand_grows($breakpoint) {
   $extension: breakpoint-extension($breakpoint);
