@@ -74,37 +74,36 @@
 
 @mixin build_spacing_helpers($grow_level, $breakpoint) {
   $extension: grow-extension($grow_level) + breakpoint-extension($breakpoint);
-  @each $margin_key in map-keys($margins) {
-    $margin_name: margin-name($margin_key);
-    .#{$margin_name}#{$extension} {
-      @if $margin_key == 'all' {
-        margin: $margin * $grow_level;
-      } @elseif $margin_key == 'x' {
-        margin-left: $margin * $grow_level;
-        margin-right: $margin * $grow_level;
-      } @elseif $margin_key == 'y' {
-        margin-top: $margin * $grow_level;
-        margin-bottom: $margin * $grow_level;
-      } @else {
-        margin-#{$margin_key}: $margin * $grow_level;
+  $spacers: 'margin', 'padding';
+
+  @each $spacer in $spacers {
+    $spacer_keys: map-keys($margins);
+    $space: $margin;
+    @if $spacer == 'padding' {
+      $spacer_keys: map-keys($paddings);
+      $space: $padding;
+    }
+    @each $spacer_key in $spacer_keys {
+      $spacer_name: margin-name($spacer_key);
+      @if $spacer == 'padding' {
+        $spacer_name: padding-name($spacer_key);
+      }
+
+      .#{$spacer_name}#{$extension} {
+        @if $spacer_key == 'all' {
+          #{$spacer}: $space * $grow_level;
+        } @elseif $spacer_key == 'x' {
+          #{$spacer}-left: $space * $grow_level;
+          #{$spacer}-right: $space * $grow_level;
+        } @elseif $spacer_key == 'y' {
+          #{$spacer}-bottom: $space * $grow_level;
+          #{$spacer}-top: $space * $grow_level;
+        } @else {
+          $attribute: #{$spacer}-#{$spacer_key};
+          #{$attribute}: $margin * $grow_level;
+        }
       }
     }
   }
 
-  @each $padding_key in map-keys($paddings) {
-    $padding_name: padding-name($padding_key);
-    .#{$padding_name}#{$extension} {
-      @if $padding_key == 'all' {
-        padding: $padding * $grow_level;
-      } @elseif $padding_key == 'x' {
-        padding-left: $padding * $grow_level;
-        padding-right: $padding * $grow_level;
-      } @elseif $padding_key == 'y' {
-        padding-top: $padding * $grow_level;
-        padding-bottom: $padding * $grow_level;
-      } @else {
-        padding-#{$padding_key}: $padding * $grow_level;
-      }
-    }
-  }
 }
