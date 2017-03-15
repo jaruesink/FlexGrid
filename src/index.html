@@ -18,294 +18,195 @@
   <p>A collaboration project with @jaruesink, @gpfaff and @LZoog.</p>
 <hr>
   <h2>Basic Usage</h2>
+  <p>Align items to the start, center, end of a row, and with space between or space around the flex items.</p>
   <div class="row flex">
-    <div class="flex_item padding_left_sm padding_top_4_md">
-      <p>1</p>
-    </div>
-    <div class="flex_item padding_top">
-      <p>2</p>
-    </div>
-    <div class="flex_item padding">
-      <p>3</p>
-    </div>
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
   </div>
-  <hr>
   <div class="row flex align_end">
-    <div class="flex_item">
-      <p>1</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
   </div>
-  <hr>
   <div class="row flex align_center">
-    <div class="flex_item">
-      <p>1</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
   </div>
-  <hr>
   <div class="row flex space_around">
-    <div class="flex_item">
-      <p>1</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
   </div>
-  <hr>
   <div class="row flex space_between">
-    <div class="flex_item">
-      <p>1</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
   </div>
+
   <hr>
+
+  <p>Flex items can grow to fill space also.</p>
   <div class="row flex">
-    <div class="flex_item grow_1">
-      <p>Items can fill space</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>2</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>3</p>
-    </div>
+    <div class="flex_item grow_1"><p>Items can fill space</p></div>
+    <div class="flex_item grow_1"><p>2</p></div>
+    <div class="flex_item grow_1"><p>3</p></div>
   </div>
-  <hr>
+  <p>A full width helper class can be applied to break up items within rows.</p>
   <div class="row flex">
     <div class="full_width">
       <p>Full Width Content</p>
     </div>
-    <div class="flex_item grow_1">
-      <p>1</p>
+    <div class="flex_item grow_1"><p>1</p></div>
+    <div class="flex_item grow_1"><p>2</p></div>
+    <div class="flex_item grow_1"><p>3</p></div>
+    <div class="full_width">
+      <p>Full Width Content</p>
     </div>
-    <div class="flex_item grow_1">
-      <p>2</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>3</p>
-    </div>
+    <div class="flex_item grow_1"><p>4</p></div>
+    <div class="flex_item grow_1"><p>5</p></div>
   </div>
+
   <hr>
+
+  <p>Flex items have multple growth levels (default: 4) that can be applied to change their fill width. .grow_2 will be 2x the size of .grow_1, and .grow_4 will be 2x the size of .grow_2.</p>
   <div class="row flex">
-    <div class="flex_item grow_2">
-      <p>Grows 2x</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>2</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>3</p>
-    </div>
+    <div class="flex_item grow_2"><p>2x</p></div>
+    <div class="flex_item grow_1"><p>1x</p></div>
+    <div class="flex_item grow_1"><p>1x</p></div>
   </div>
-  <hr>
   <div class="row flex">
-    <div class="flex_item grow_1">
-      <p>1</p>
-    </div>
-    <div class="flex_item grow_2">
-      <p>2</p>
-    </div>
-    <div class="flex_item grow_3">
-      <p>3</p>
-    </div>
-    <div class="flex_item grow_4">
-      <p>Four levels of growth</p>
-    </div>
+    <div class="flex_item grow_1"><p>1x</p></div>
+    <div class="flex_item grow_2"><p>2x</p></div>
+    <div class="flex_item grow_3"><p>3x</p></div>
+    <div class="flex_item grow_4"><p>4x</p></div>
   </div>
+
   <hr>
+
+  <p>Shorthand classes are provided as an alternate method to creating columns of similar width.</p>
   <div class="row two_across">
-    <div class="flex_item">
-      <p>Shorthand classes</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
-    <div class="flex_item">
-      <p>4</p>
-    </div>
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
+    <div class="flex_item"><p>4</p></div>
   </div>
+
+  <p>Under the across shorthand classes, flex items can use across classes to fill more than one column.</p>
+  <div class="row six_across">
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
+    <div class="flex_item"><p>4</p></div>
+    <div class="flex_item across_2"><p>2x</p></div>
+  </div>
+
   <hr>
-  <div class="row three_across">
-    <div class="flex_item">
-      <p>Shorthand classes</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
-    <div class="flex_item">
-      <p>4</p>
-    </div>
-    <div class="flex_item">
-      <p>5</p>
-    </div>
-    <div class="flex_item">
-      <p>6</p>
-    </div>
+  <h2>Responsive Examples</h2>
+
+  <p>Adding _sm, _md, _lg, _xl to the end of some classes will only apply it at that screen size and up. If a responsive extension is added to the flex or across shorthand classes, then all flex items will be displayed as a block below that breakpoint.</p>
+  <div class="row flex_md">
+    <div class="flex_item grow_1"><p>1</p></div>
+    <div class="flex_item grow_1"><p>2</p></div>
+    <div class="flex_item grow_1"><p>3</p></div>
   </div>
+
+  <p>Note: Notice on the small to medium breakpoint how across_4 fills the row, which is 2 items across, because of the two_across shorthand. These across shorthands for flex items currently have limited usage. They also rely on their parent row's responsive extensions and cannot have their own responsive extension. These should cover most use cases, but if you have an issue please submit one on github.</p>
+  <div class="row two_across_sm four_across_md twelve_across_lg">
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
+    <div class="flex_item"><p>4</p></div>
+    <div class="flex_item across_4"><p>4x</p></div>
+    <div class="flex_item"><p>9</p></div>
+    <div class="flex_item"><p>10</p></div>
+    <div class="flex_item"><p>11</p></div>
+    <div class="flex_item"><p>12</p></div>
+  </div>
+
   <hr>
-  <h2>More Responsive Examples</h2>
-  <div class="row two_across four_across_md">
-    <div class="flex_item">
-      <p>up to four across</p>
-    </div>
-    <div class="flex_item">
-      <p>and responsive</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
-    <div class="flex_item">
-      <p>4</p>
-    </div>
-    <div class="flex_item">
-      <p>5</p>
-    </div>
-    <div class="flex_item">
-      <p>6</p>
-    </div>
-    <div class="flex_item">
-      <p>7</p>
-    </div>
-    <div class="flex_item">
-      <p>8</p>
-    </div>
+
+  <p>Responsive extensions can be added to grow classes as well.</p><p>Note: We have set word-break: break-all; so the size can reflect accurately. Long words/no-wrapping can prevent the flex items basis width from shrinking.</p>
+  <div class="row flex">
+    <div class="flex_item grow_4 grow_1_sm"><p>1x</p></div>
+    <div class="flex_item grow_1 grow_4_sm grow_1_md"><p>4x_sm 1x_md</p></div>
+    <div class="flex_item grow_1 grow_4_md grow_1_lg"><p>4x_md 1x_lg</p></div>
+    <div class="flex_item grow_1 grow_4_lg"><p>4x_lg</p></div>
   </div>
+
   <hr>
-  <div class="row flex_sm">
-    <div class="flex_item grow_1_sm">
-      <p>we change</p>
-    </div>
-    <div class="flex_item grow_4_sm grow_1_md">
-      <p>when the</p>
-    </div>
-    <div class="flex_item grow_1 grow_4_md grow_1_lg">
-      <p>browser width</p>
-    </div>
-    <div class="flex_item grow_1 grow_4_lg">
-      <p>changes</p>
-    </div>
+
+  <p>An example with responsive extentions on layout classes.</p>
+  <div class="row three_across space_between_sm space_around_lg">
+    <div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
+    <div class="flex_item"><p>4</p></div>
+    <div class="flex_item"><p>5</p></div>
   </div>
-  <hr>
-  <div class="row three_across_sm space_around_sm space_between_lg">
-    <div class="flex_item">
-      <p>1</p>
-    </div>
-    <div class="flex_item">
-      <p>2</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
-    <div class="flex_item">
-      <p>4</p>
-    </div>
-    <div class="flex_item">
-      <p>5</p>
-    </div>
-  </div>
+
   <hr>
   <h2>Gutters</h2>
+
+  <p>The gutter default is set to 16px.</p>
   <div class="row flex gutter">
-    <div class="flex_item grow_1">
-      <p>1</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>2</p>
-    </div>
-    <div class="flex_item grow_1">
-      <p>3</p>
-    </div>
+    <div class="flex_item grow_1"><p>1</p></div>
+    <div class="flex_item grow_1"><p>2</p></div>
+    <div class="flex_item grow_1"><p>3</p></div>
   </div>
-  <div class="row gutter four_across_sm">
-    <div class="flex_item">
-      <p>a</p>
-    </div>
-    <div class="flex_item">
-      <p>b</p>
-    </div>
-    <div class="flex_item">
-      <p>c</p>
-    </div>
-    <div class="flex_item">
-      <p>d</p>
-    </div>
-    <div class="flex_item">
-      <p>e</p>
-    </div>
-    <div class="flex_item grow_3_sm">
-      <p>f</p>
-    </div>
+  <div class="row gutter four_across_sm"><div class="flex_item"><p>1</p></div>
+    <div class="flex_item"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
+    <div class="flex_item"><p>4</p></div>
+    <div class="flex_item"><p>5</p></div>
+    <div class="flex_item across_3"><p>3x</p></div>
   </div>
+
   <hr>
   <h2>Nested Rows</h2>
+
   <div class="row two_across">
     <div class="flex_item">
-      <div class="row flex_sm">
+      <div class="row flex_md">
         <div class="flex_item grow_1">
-          <p>1</p>
+          <p>1_1</p>
         </div>
         <div class="flex_item grow_2">
-          <p>2</p>
+          <p>1_2</p>
         </div>
       </div>
     </div>
     <div class="flex_item">
-      <div class="row flex_sm">
+      <div class="row flex_md">
         <div class="flex_item grow_2">
-          <p>3</p>
+          <p>2_1</p>
         </div>
         <div class="flex_item grow_1">
-          <p>4</p>
+          <p>2_2</p>
         </div>
       </div>
     </div>
   </div>
+
   <hr>
-  <h2>Complicated Shorthand Arrangement</h2>
-  <div class="row three_across_sm">
-    <div class="flex_item">
-      <p>'Grow' inside shorthand classes</p>
-    </div>
-    <div class="flex_item grow_2_md">
-      <p>grow_2_md</p>
-    </div>
-    <div class="flex_item">
-      <p>3</p>
-    </div>
-    <div class="flex_item">
-      <p>4</p>
-    </div>
-    <div class="flex_item">
-      <p>5</p>
-    </div>
-    <div class="flex_item grow_3_lg">
-      <p>grow_3_lg</p>
-    </div>
+  <h2>Ordering</h2>
+
+  <p>Flex items have a default order of 0. So negative order positions will move to the front, and positive order positions will move to the back</p>
+  <div class="row flex three_across">
+    <div class="flex_item order_1"><p>1</p></div>
+    <div class="flex_item order_-1"><p>2</p></div>
+    <div class="flex_item"><p>3</p></div>
+  </div>
+
+  <p>Order positions from -6 to 6 are supported.</p>
+  <div class="row flex six_across">
+    <div class="flex_item order_6"><p>1</p></div>
+    <div class="flex_item order_2"><p>2</p></div>
+    <div class="flex_item order_1"><p>3</p></div>
+    <div class="flex_item order_-1"><p>4</p></div>
+    <div class="flex_item order_-4"><p>5</p></div>
+    <div class="flex_item order_-6"><p>6</p></div>
   </div>
 </body>
 </html>
