@@ -24,5 +24,6 @@
     @include build_shorthands($breakpoint);
     @include build_alignments($breakpoint);
     @include build_shorthand_grows($breakpoint);
+    @include build_order_helpers($breakpoint);
   }
 }

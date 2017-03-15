@@ -45,16 +45,26 @@
 }
 
 @mixin build_shorthands($breakpoint) {
-  @for $grow_level from 2 through $grow_levels {
-    .#{shorthand-name($grow_level)}#{breakpoint-extension($breakpoint)} {
+  @for $shorthand_level from 2 through 12 {
+    .#{shorthand-name($shorthand_level)}#{breakpoint-extension($breakpoint)} {
       display: flex;
 
       > .flex_item {
-        flex-basis: #{percentage(1 / $grow_level)};
+        flex-basis: #{percentage(1 / $shorthand_level)};
+        @for $across_level from 2 through 12 {
+          &.across_#{$across_level} {
+            flex-basis: #{percentage($across_level / $shorthand_level)};
+          }
+        }
       }
 
       &.gutter > .flex_item {
-        flex-basis: calc(#{percentage(1 / $grow_level)} - #{$grid_gutter_x} * 2);
+        flex-basis: calc(#{percentage(1 / $shorthand_level)} - #{$grid_gutter_x} * 2);
+        @for $across_level from 2 through 12 {
+          &.across_#{$across_level} {
+            flex-basis: calc(#{percentage($across_level / $shorthand_level)} - #{$grid_gutter_x} * 2);
+          }
+        }
       }
     }
   }
@@ -68,6 +78,16 @@
       [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
         flex-basis: calc(#{percentage(1 / $grow_level)} * #{$i});
       }
+    }
+  }
+}
+
+
+@mixin build_order_helpers($breakpoint) {
+  $extension: breakpoint-extension($breakpoint);
+  @for $order_level from -6 through 6 {
+    .order_#{$order_level}#{$extension} {
+      order: $order_level;
     }
   }
 }

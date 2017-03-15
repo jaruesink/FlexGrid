@@ -41,7 +41,7 @@ $margins: (
 );
 
 $grid_gutter_x: 16px;
-$grid_gutter_y: 8px;
+$grid_gutter_y: $grid_gutter_x;
 $margin: $grid_gutter_x;
 $padding: $grid_gutter_x;
 
