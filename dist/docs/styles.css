@@ -394,8 +394,8 @@
     margin-left: 16px;
     margin-right: 16px; }
   .margin_y {
-    margin-top: 16px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    margin-top: 16px; }
   .margin {
     margin: 16px; }
   .padding_top {
@@ -410,8 +410,8 @@
     padding-left: 16px;
     padding-right: 16px; }
   .padding_y {
-    padding-top: 16px;
-    padding-bottom: 16px; }
+    padding-bottom: 16px;
+    padding-top: 16px; }
   .padding {
     padding: 16px; }
   .margin_top_2 {
@@ -426,8 +426,8 @@
     margin-left: 32px;
     margin-right: 32px; }
   .margin_y_2 {
-    margin-top: 32px;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    margin-top: 32px; }
   .margin_2 {
     margin: 32px; }
   .padding_top_2 {
@@ -442,8 +442,8 @@
     padding-left: 32px;
     padding-right: 32px; }
   .padding_y_2 {
-    padding-top: 32px;
-    padding-bottom: 32px; }
+    padding-bottom: 32px;
+    padding-top: 32px; }
   .padding_2 {
     padding: 32px; }
   .margin_top_3 {
@@ -458,8 +458,8 @@
     margin-left: 48px;
     margin-right: 48px; }
   .margin_y_3 {
-    margin-top: 48px;
-    margin-bottom: 48px; }
+    margin-bottom: 48px;
+    margin-top: 48px; }
   .margin_3 {
     margin: 48px; }
   .padding_top_3 {
@@ -474,8 +474,8 @@
     padding-left: 48px;
     padding-right: 48px; }
   .padding_y_3 {
-    padding-top: 48px;
-    padding-bottom: 48px; }
+    padding-bottom: 48px;
+    padding-top: 48px; }
   .padding_3 {
     padding: 48px; }
   .margin_top_4 {
@@ -490,8 +490,8 @@
     margin-left: 64px;
     margin-right: 64px; }
   .margin_y_4 {
-    margin-top: 64px;
-    margin-bottom: 64px; }
+    margin-bottom: 64px;
+    margin-top: 64px; }
   .margin_4 {
     margin: 64px; }
   .padding_top_4 {
@@ -506,8 +506,8 @@
     padding-left: 64px;
     padding-right: 64px; }
   .padding_y_4 {
-    padding-top: 64px;
-    padding-bottom: 64px; }
+    padding-bottom: 64px;
+    padding-top: 64px; }
   .padding_4 {
     padding: 64px; }
   @media (min-width: 512px) {
@@ -523,8 +523,8 @@
       margin-left: 16px;
       margin-right: 16px; }
     .margin_y_sm {
-      margin-top: 16px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      margin-top: 16px; }
     .margin_sm {
       margin: 16px; }
     .padding_top_sm {
@@ -539,8 +539,8 @@
       padding-left: 16px;
       padding-right: 16px; }
     .padding_y_sm {
-      padding-top: 16px;
-      padding-bottom: 16px; }
+      padding-bottom: 16px;
+      padding-top: 16px; }
     .padding_sm {
       padding: 16px; } }
   @media (min-width: 512px) {
@@ -556,8 +556,8 @@
       margin-left: 32px;
       margin-right: 32px; }
     .margin_y_2_sm {
-      margin-top: 32px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      margin-top: 32px; }
     .margin_2_sm {
       margin: 32px; }
     .padding_top_2_sm {
@@ -572,8 +572,8 @@
       padding-left: 32px;
       padding-right: 32px; }
     .padding_y_2_sm {
-      padding-top: 32px;
-      padding-bottom: 32px; }
+      padding-bottom: 32px;
+      padding-top: 32px; }
     .padding_2_sm {
       padding: 32px; } }
   @media (min-width: 512px) {
@@ -589,8 +589,8 @@
       margin-left: 48px;
       margin-right: 48px; }
     .margin_y_3_sm {
-      margin-top: 48px;
-      margin-bottom: 48px; }
+      margin-bottom: 48px;
+      margin-top: 48px; }
     .margin_3_sm {
       margin: 48px; }
     .padding_top_3_sm {
@@ -605,8 +605,8 @@
       padding-left: 48px;
       padding-right: 48px; }
     .padding_y_3_sm {
-      padding-top: 48px;
-      padding-bottom: 48px; }
+      padding-bottom: 48px;
+      padding-top: 48px; }
     .padding_3_sm {
       padding: 48px; } }
   @media (min-width: 512px) {
@@ -622,8 +622,8 @@
       margin-left: 64px;
       margin-right: 64px; }
     .margin_y_4_sm {
-      margin-top: 64px;
-      margin-bottom: 64px; }
+      margin-bottom: 64px;
+      margin-top: 64px; }
     .margin_4_sm {
       margin: 64px; }
     .padding_top_4_sm {
@@ -638,8 +638,8 @@
       padding-left: 64px;
       padding-right: 64px; }
     .padding_y_4_sm {
-      padding-top: 64px;
-      padding-bottom: 64px; }
+      padding-bottom: 64px;
+      padding-top: 64px; }
     .padding_4_sm {
       padding: 64px; } }
   @media (min-width: 760px) {
@@ -655,8 +655,8 @@
       margin-left: 16px;
       margin-right: 16px; }
     .margin_y_md {
-      margin-top: 16px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      margin-top: 16px; }
     .margin_md {
       margin: 16px; }
     .padding_top_md {
@@ -671,8 +671,8 @@
       padding-left: 16px;
       padding-right: 16px; }
     .padding_y_md {
-      padding-top: 16px;
-      padding-bottom: 16px; }
+      padding-bottom: 16px;
+      padding-top: 16px; }
     .padding_md {
       padding: 16px; } }
   @media (min-width: 760px) {
@@ -688,8 +688,8 @@
       margin-left: 32px;
       margin-right: 32px; }
     .margin_y_2_md {
-      margin-top: 32px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      margin-top: 32px; }
     .margin_2_md {
       margin: 32px; }
     .padding_top_2_md {
@@ -704,8 +704,8 @@
       padding-left: 32px;
       padding-right: 32px; }
     .padding_y_2_md {
-      padding-top: 32px;
-      padding-bottom: 32px; }
+      padding-bottom: 32px;
+      padding-top: 32px; }
     .padding_2_md {
       padding: 32px; } }
   @media (min-width: 760px) {
@@ -721,8 +721,8 @@
       margin-left: 48px;
       margin-right: 48px; }
     .margin_y_3_md {
-      margin-top: 48px;
-      margin-bottom: 48px; }
+      margin-bottom: 48px;
+      margin-top: 48px; }
     .margin_3_md {
       margin: 48px; }
     .padding_top_3_md {
@@ -737,8 +737,8 @@
       padding-left: 48px;
       padding-right: 48px; }
     .padding_y_3_md {
-      padding-top: 48px;
-      padding-bottom: 48px; }
+      padding-bottom: 48px;
+      padding-top: 48px; }
     .padding_3_md {
       padding: 48px; } }
   @media (min-width: 760px) {
@@ -754,8 +754,8 @@
       margin-left: 64px;
       margin-right: 64px; }
     .margin_y_4_md {
-      margin-top: 64px;
-      margin-bottom: 64px; }
+      margin-bottom: 64px;
+      margin-top: 64px; }
     .margin_4_md {
       margin: 64px; }
     .padding_top_4_md {
@@ -770,8 +770,8 @@
       padding-left: 64px;
       padding-right: 64px; }
     .padding_y_4_md {
-      padding-top: 64px;
-      padding-bottom: 64px; }
+      padding-bottom: 64px;
+      padding-top: 64px; }
     .padding_4_md {
       padding: 64px; } }
   @media (min-width: 1012px) {
@@ -787,8 +787,8 @@
       margin-left: 16px;
       margin-right: 16px; }
     .margin_y_lg {
-      margin-top: 16px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      margin-top: 16px; }
     .margin_lg {
       margin: 16px; }
     .padding_top_lg {
@@ -803,8 +803,8 @@
       padding-left: 16px;
       padding-right: 16px; }
     .padding_y_lg {
-      padding-top: 16px;
-      padding-bottom: 16px; }
+      padding-bottom: 16px;
+      padding-top: 16px; }
     .padding_lg {
       padding: 16px; } }
   @media (min-width: 1012px) {
@@ -820,8 +820,8 @@
       margin-left: 32px;
       margin-right: 32px; }
     .margin_y_2_lg {
-      margin-top: 32px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      margin-top: 32px; }
     .margin_2_lg {
       margin: 32px; }
     .padding_top_2_lg {
@@ -836,8 +836,8 @@
       padding-left: 32px;
       padding-right: 32px; }
     .padding_y_2_lg {
-      padding-top: 32px;
-      padding-bottom: 32px; }
+      padding-bottom: 32px;
+      padding-top: 32px; }
     .padding_2_lg {
       padding: 32px; } }
   @media (min-width: 1012px) {
@@ -853,8 +853,8 @@
       margin-left: 48px;
       margin-right: 48px; }
     .margin_y_3_lg {
-      margin-top: 48px;
-      margin-bottom: 48px; }
+      margin-bottom: 48px;
+      margin-top: 48px; }
     .margin_3_lg {
       margin: 48px; }
     .padding_top_3_lg {
@@ -869,8 +869,8 @@
       padding-left: 48px;
       padding-right: 48px; }
     .padding_y_3_lg {
-      padding-top: 48px;
-      padding-bottom: 48px; }
+      padding-bottom: 48px;
+      padding-top: 48px; }
     .padding_3_lg {
       padding: 48px; } }
   @media (min-width: 1012px) {
@@ -886,8 +886,8 @@
       margin-left: 64px;
       margin-right: 64px; }
     .margin_y_4_lg {
-      margin-top: 64px;
-      margin-bottom: 64px; }
+      margin-bottom: 64px;
+      margin-top: 64px; }
     .margin_4_lg {
       margin: 64px; }
     .padding_top_4_lg {
@@ -902,8 +902,8 @@
       padding-left: 64px;
       padding-right: 64px; }
     .padding_y_4_lg {
-      padding-top: 64px;
-      padding-bottom: 64px; }
+      padding-bottom: 64px;
+      padding-top: 64px; }
     .padding_4_lg {
       padding: 64px; } }
   @media (min-width: 1480px) {
@@ -919,8 +919,8 @@
       margin-left: 16px;
       margin-right: 16px; }
     .margin_y_xl {
-      margin-top: 16px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      margin-top: 16px; }
     .margin_xl {
       margin: 16px; }
     .padding_top_xl {
@@ -935,8 +935,8 @@
       padding-left: 16px;
       padding-right: 16px; }
     .padding_y_xl {
-      padding-top: 16px;
-      padding-bottom: 16px; }
+      padding-bottom: 16px;
+      padding-top: 16px; }
     .padding_xl {
       padding: 16px; } }
   @media (min-width: 1480px) {
@@ -952,8 +952,8 @@
       margin-left: 32px;
       margin-right: 32px; }
     .margin_y_2_xl {
-      margin-top: 32px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      margin-top: 32px; }
     .margin_2_xl {
       margin: 32px; }
     .padding_top_2_xl {
@@ -968,8 +968,8 @@
       padding-left: 32px;
       padding-right: 32px; }
     .padding_y_2_xl {
-      padding-top: 32px;
-      padding-bottom: 32px; }
+      padding-bottom: 32px;
+      padding-top: 32px; }
     .padding_2_xl {
       padding: 32px; } }
   @media (min-width: 1480px) {
@@ -985,8 +985,8 @@
       margin-left: 48px;
       margin-right: 48px; }
     .margin_y_3_xl {
-      margin-top: 48px;
-      margin-bottom: 48px; }
+      margin-bottom: 48px;
+      margin-top: 48px; }
     .margin_3_xl {
       margin: 48px; }
     .padding_top_3_xl {
@@ -1001,8 +1001,8 @@
       padding-left: 48px;
       padding-right: 48px; }
     .padding_y_3_xl {
-      padding-top: 48px;
-      padding-bottom: 48px; }
+      padding-bottom: 48px;
+      padding-top: 48px; }
     .padding_3_xl {
       padding: 48px; } }
   @media (min-width: 1480px) {
@@ -1018,8 +1018,8 @@
       margin-left: 64px;
       margin-right: 64px; }
     .margin_y_4_xl {
-      margin-top: 64px;
-      margin-bottom: 64px; }
+      margin-bottom: 64px;
+      margin-top: 64px; }
     .margin_4_xl {
       margin: 64px; }
     .padding_top_4_xl {
@@ -1034,8 +1034,8 @@
       padding-left: 64px;
       padding-right: 64px; }
     .padding_y_4_xl {
-      padding-top: 64px;
-      padding-bottom: 64px; }
+      padding-bottom: 64px;
+      padding-top: 64px; }
     .padding_4_xl {
       padding: 64px; } }
   .row, .row * {
