@@ -129,7 +129,12 @@
       }
 
       .#{$spacer_name}#{$extension} {
-        @if $spacer_key == 'all' {
+        @if $spacer_key == 'center' {
+          @if $spacer == 'margin' {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        } @elseif $spacer_key == 'all' {
           #{$spacer}: $space * $grow_level;
         } @elseif $spacer_key == 'x' {
           #{$spacer}-left: $space * $grow_level;

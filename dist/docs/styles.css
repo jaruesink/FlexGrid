@@ -397,6 +397,9 @@
   .margin_y {
     margin-bottom: 16px;
     margin-top: 16px; }
+  .margin_center {
+    margin-left: auto;
+    margin-right: auto; }
   .margin {
     margin: 16px; }
   .padding_top {
@@ -429,6 +432,9 @@
   .margin_y_2 {
     margin-bottom: 32px;
     margin-top: 32px; }
+  .margin_center_2 {
+    margin-left: auto;
+    margin-right: auto; }
   .margin_2 {
     margin: 32px; }
   .padding_top_2 {
@@ -461,6 +467,9 @@
   .margin_y_3 {
     margin-bottom: 48px;
     margin-top: 48px; }
+  .margin_center_3 {
+    margin-left: auto;
+    margin-right: auto; }
   .margin_3 {
     margin: 48px; }
   .padding_top_3 {
@@ -493,6 +502,9 @@
   .margin_y_4 {
     margin-bottom: 64px;
     margin-top: 64px; }
+  .margin_center_4 {
+    margin-left: auto;
+    margin-right: auto; }
   .margin_4 {
     margin: 64px; }
   .padding_top_4 {
@@ -526,6 +538,9 @@
     .margin_y_sm {
       margin-bottom: 16px;
       margin-top: 16px; }
+    .margin_center_sm {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_sm {
       margin: 16px; }
     .padding_top_sm {
@@ -558,6 +573,9 @@
     .margin_y_2_sm {
       margin-bottom: 32px;
       margin-top: 32px; }
+    .margin_center_2_sm {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_2_sm {
       margin: 32px; }
     .padding_top_2_sm {
@@ -590,6 +608,9 @@
     .margin_y_3_sm {
       margin-bottom: 48px;
       margin-top: 48px; }
+    .margin_center_3_sm {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_3_sm {
       margin: 48px; }
     .padding_top_3_sm {
@@ -622,6 +643,9 @@
     .margin_y_4_sm {
       margin-bottom: 64px;
       margin-top: 64px; }
+    .margin_center_4_sm {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_4_sm {
       margin: 64px; }
     .padding_top_4_sm {
@@ -655,6 +679,9 @@
     .margin_y_md {
       margin-bottom: 16px;
       margin-top: 16px; }
+    .margin_center_md {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_md {
       margin: 16px; }
     .padding_top_md {
@@ -687,6 +714,9 @@
     .margin_y_2_md {
       margin-bottom: 32px;
       margin-top: 32px; }
+    .margin_center_2_md {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_2_md {
       margin: 32px; }
     .padding_top_2_md {
@@ -719,6 +749,9 @@
     .margin_y_3_md {
       margin-bottom: 48px;
       margin-top: 48px; }
+    .margin_center_3_md {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_3_md {
       margin: 48px; }
     .padding_top_3_md {
@@ -751,6 +784,9 @@
     .margin_y_4_md {
       margin-bottom: 64px;
       margin-top: 64px; }
+    .margin_center_4_md {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_4_md {
       margin: 64px; }
     .padding_top_4_md {
@@ -784,6 +820,9 @@
     .margin_y_lg {
       margin-bottom: 16px;
       margin-top: 16px; }
+    .margin_center_lg {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_lg {
       margin: 16px; }
     .padding_top_lg {
@@ -816,6 +855,9 @@
     .margin_y_2_lg {
       margin-bottom: 32px;
       margin-top: 32px; }
+    .margin_center_2_lg {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_2_lg {
       margin: 32px; }
     .padding_top_2_lg {
@@ -848,6 +890,9 @@
     .margin_y_3_lg {
       margin-bottom: 48px;
       margin-top: 48px; }
+    .margin_center_3_lg {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_3_lg {
       margin: 48px; }
     .padding_top_3_lg {
@@ -880,6 +925,9 @@
     .margin_y_4_lg {
       margin-bottom: 64px;
       margin-top: 64px; }
+    .margin_center_4_lg {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_4_lg {
       margin: 64px; }
     .padding_top_4_lg {
@@ -913,6 +961,9 @@
     .margin_y_xl {
       margin-bottom: 16px;
       margin-top: 16px; }
+    .margin_center_xl {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_xl {
       margin: 16px; }
     .padding_top_xl {
@@ -945,6 +996,9 @@
     .margin_y_2_xl {
       margin-bottom: 32px;
       margin-top: 32px; }
+    .margin_center_2_xl {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_2_xl {
       margin: 32px; }
     .padding_top_2_xl {
@@ -977,6 +1031,9 @@
     .margin_y_3_xl {
       margin-bottom: 48px;
       margin-top: 48px; }
+    .margin_center_3_xl {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_3_xl {
       margin: 48px; }
     .padding_top_3_xl {
@@ -1009,6 +1066,9 @@
     .margin_y_4_xl {
       margin-bottom: 64px;
       margin-top: 64px; }
+    .margin_center_4_xl {
+      margin-left: auto;
+      margin-right: auto; }
     .margin_4_xl {
       margin: 64px; }
     .padding_top_4_xl {
