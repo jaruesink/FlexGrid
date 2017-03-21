@@ -31,4 +31,12 @@
     @include build_shorthand_grows($breakpoint);
     @include build_order_helpers($breakpoint);
   }
+  @include build_only_media_queries($breakpoint) {
+    @include build_grows($breakpoint, true);
+    @include build_flex_rows($breakpoint, true);
+    @include build_shorthands($breakpoint, true);
+    @include build_alignments($breakpoint, true);
+    @include build_shorthand_grows($breakpoint, true);
+    @include build_order_helpers($breakpoint, true);
+  }
 }

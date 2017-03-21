@@ -5,13 +5,23 @@
       @include build_spacing_helpers($grow_level, $breakpoint);
     }
   }
+  @include build_only_media_queries($breakpoint) {
+    @for $grow_level from 1 through $grow_levels {
+      @include build_spacing_helpers($grow_level, $breakpoint);
+    }
+  }
 }
 
 // Builds across helper classes
 @each $breakpoint in map-keys($breakpoints) {
   @include build_media_queries($breakpoint) {
     @for $shorthand_level from 2 through 12 {
-      @include build_across_helpers($shorthand_level, $breakpoint);
+      @include build_across_helpers($shorthand_level, $breakpoint, true);
+    }
+  }
+  @include build_only_media_queries($breakpoint) {
+    @for $shorthand_level from 2 through 12 {
+      @include build_across_helpers($shorthand_level, $breakpoint, true);
     }
   }
 }

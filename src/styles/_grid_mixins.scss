@@ -1,4 +1,5 @@
 @mixin build_media_queries($breakpoint) {
+
   @if (requires-media-query($breakpoint)) {
     @media (min-width: breakpoint-value($breakpoint)) {
       @content;
@@ -8,45 +9,78 @@
   }
 }
 
-@mixin build_grows($breakpoint) {
+@mixin build_only_media_queries($breakpoint) {
+
+  @if (requires-only-media-query($breakpoint)) {
+    @media (min-width: breakpoint-value($breakpoint)) and (max-width: next-breakpoint-value($breakpoint) - 1px) {
+      @content;
+    }
+  }
+}
+
+@mixin build_grows($breakpoint, $only: false) {
+
+  $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
+
   @for $grow_level from 1 through $grow_levels {
-    .grow_#{$grow_level}#{breakpoint-extension($breakpoint)} {
+    .grow_#{$grow_level}#{$extension} {
       flex: #{$grow_level};
     }
   }
 }
 
-@mixin build_flex_rows($breakpoint) {
-  .flex#{breakpoint-extension($breakpoint)} {
+@mixin build_flex_rows($breakpoint, $only: false) {
+
+  $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
+
+  .flex#{$extension} {
     display: flex;
   }
 }
 
-@mixin build_alignments($breakpoint) {
-  .space_between#{breakpoint-extension($breakpoint)} {
+@mixin build_alignments($breakpoint, $only: false) {
+
+  $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
+
+  .space_between#{$extension} {
     justify-content: space-between;
   }
 
-  .space_around#{breakpoint-extension($breakpoint)} {
+  .space_around#{$extension} {
     justify-content: space-around;
   }
 
-  .align_start#{breakpoint-extension($breakpoint)} {
+  .align_start#{$extension} {
     justify-content: flex-start;
   }
 
-  .align_end#{breakpoint-extension($breakpoint)} {
+  .align_end#{$extension} {
     justify-content: flex-end;
   }
 
-  .align_center#{breakpoint-extension($breakpoint)} {
+  .align_center#{$extension} {
     justify-content: center;
   }
 }
 
-@mixin build_shorthands($breakpoint) {
+@mixin build_shorthands($breakpoint, $only: false) {
+
+  $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
+
   @for $shorthand_level from 2 through 12 {
-    .#{shorthand-name($shorthand_level)}#{breakpoint-extension($breakpoint)} {
+    .#{shorthand-name($shorthand_level)}#{$extension} {
       display: flex;
 
       > .flex_item {
@@ -60,7 +94,12 @@
   }
 };
 
-@mixin build_across_helpers($shorthand_level, $breakpoint) {
+@mixin build_across_helpers($shorthand_level, $breakpoint, $only: false) {
+
+  $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
 
   // Allows a flex_item to fill the row when .two_across > .across_4
   [class*='_across'] > .flex_item {
@@ -71,7 +110,7 @@
 
   @for $across_level from 2 through 12 {
     @if $across_level < $shorthand_level {
-      .#{shorthand-name($shorthand_level)}#{breakpoint-extension($breakpoint)} {
+      .#{shorthand-name($shorthand_level)}#{$extension} {
         > .flex_item {
           &.across_#{$across_level} {
             flex-basis: #{percentage($across_level / $shorthand_level)};
@@ -89,7 +128,7 @@
 
 }
 
-@mixin build_shorthand_grows($breakpoint) {
+@mixin build_shorthand_grows($breakpoint, $only: false) {
   $extension: breakpoint-extension($breakpoint);
   @for $grow_level from 2 through $grow_levels {
     $shorthand: shorthand-name($grow_level);
@@ -102,8 +141,13 @@
 }
 
 
-@mixin build_order_helpers($breakpoint) {
+@mixin build_order_helpers($breakpoint, $only: false) {
+
   $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
+
   @for $order_level from -6 through 6 {
     .order_#{$order_level}#{$extension} {
       order: $order_level;
@@ -111,8 +155,13 @@
   }
 }
 
-@mixin build_spacing_helpers($grow_level, $breakpoint) {
+@mixin build_spacing_helpers($grow_level, $breakpoint, $only: false) {
+
   $extension: grow-extension($grow_level) + breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: grow-extension($grow_level) + breakpoint-only-extension($breakpoint);
+  }
+
   $spacers: 'margin', 'padding';
 
   @each $spacer in $spacers {
