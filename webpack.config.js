@@ -1,7 +1,7 @@
-const path = require('path');
+const Autoprefixer = require('Autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const Autoprefixer = require('Autoprefixer');
+const path = require('path');
 
 const config = {
   entry: './src/js/index.js',
@@ -9,6 +9,7 @@ const config = {
     path: path.resolve(__dirname, 'dist/docs'),
     filename: 'bundle.js'
   },
+  watch: true,
   devtool: 'source-map',
   module: {
     rules: [
@@ -56,7 +57,17 @@ const config = {
       template: 'src/index.html',
       inject: 'body'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist/docs'), // boolean | string | array, static file location
+    filename: 'bundle.js',
+    compress: true, // enable gzip compression
+    historyApiFallback: true, // true for index.html upon 404, object for multiple paths
+    hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
+    https: false, // true for self-signed, object for cert authority
+    noInfo: true, // only errors & warns on hot reload
+    port: 8080
+  }
 }
 
 module.exports = config;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run export_css && webpack",
-    "dev": "webpack --watch",
+    "dev": "webpack-dev-server --hot --inline",
     "export_css": "node export_flex_grid.js && npm run minify_css && npm run post_css",
     "minify_css": "node-sass --output-style compressed --include-path dist dist/flex_grid.scss dist/flex_grid.min.css",
     "post_css": "postcss dist/flex_grid.min.css -u autoprefixer -o dist/flex_grid.min.css --no-map",
@@ -30,6 +30,7 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.2.0-rc.3"
+    "webpack": "^2.2.0-rc.3",
+    "webpack-dev-server": "^2.4.2"
   }
 }
