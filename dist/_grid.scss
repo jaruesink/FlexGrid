@@ -34,9 +34,13 @@
   @include build_only_media_queries($breakpoint) {
     @include build_grows($breakpoint, true);
     @include build_flex_rows($breakpoint, true);
-    @include build_shorthands($breakpoint, true);
+    // // Commenting out for now, because I'm not sure this is wanted.
+    // // It makes the file size a lot larger.
+    // @include build_shorthands($breakpoint, true);
     @include build_alignments($breakpoint, true);
-    @include build_shorthand_grows($breakpoint, true);
+    // // Commenting out for now, because I'm not sure this is wanted.
+    // // It makes the file size a lot larger.
+    // @include build_shorthand_grows($breakpoint, true);
     @include build_order_helpers($breakpoint, true);
   }
 }
