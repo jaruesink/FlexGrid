@@ -4,6 +4,26 @@
   }
 }
 
+//Credit: https://gist.github.com/agorilla/9df052eb1e15d8aea446
+@function next-breakpoint-value($breakpoint, $fallback: false) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $i: 0;
+    $key-index: false;
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      $i: $i + 1;
+      @if $breakpoint-key == $breakpoint {
+        $key-index: $i;
+      }
+      @if $i == $key-index + 1 {
+        @return $breakpoint-value;
+      }
+      @if $i == length($breakpoints) {
+        @return $fallback;
+      }
+    }
+  }
+}
+
 @function shorthand-name($shorthand) {
   @if map-has-key($shorthands, $shorthand) {
     @return map-get($shorthands, $shorthand);
@@ -29,9 +49,23 @@
   @return true;
 }
 
+@function requires-only-media-query($breakpoint) {
+  @if ($breakpoint == 'xl') {
+    @return false;
+  }
+  @return true;
+}
+
 @function breakpoint-extension($breakpoint) {
   @if (requires-media-query($breakpoint)) {
     @return '_#{$breakpoint}';
+  }
+  @return '';
+}
+
+@function breakpoint-only-extension($breakpoint) {
+  @if (requires-only-media-query($breakpoint)) {
+    @return '_#{$breakpoint}_only';
   }
   @return '';
 }
