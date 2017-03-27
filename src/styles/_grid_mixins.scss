@@ -84,11 +84,13 @@
       display: flex;
 
       > .flex_item {
-        flex-basis: #{percentage(1 / $shorthand_level)};
+        flex: 0 0 auto;
+        width: #{percentage(1 / $shorthand_level)};
       }
 
       &.gutter > .flex_item {
-        flex-basis: calc(#{percentage(1 / $shorthand_level)} - #{$grid_gutter_x} * 2);
+        flex: 0 0 auto;
+        width: calc(#{percentage(1 / $shorthand_level)} - #{$grid_gutter_x} * 2);
       }
     }
   }
