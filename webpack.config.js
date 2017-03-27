@@ -9,7 +9,7 @@ const config = {
     path: path.resolve(__dirname, 'dist/docs'),
     filename: 'bundle.js'
   },
-  watch: true,
+  watch: false,
   devtool: 'source-map',
   module: {
     rules: [

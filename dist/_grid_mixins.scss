@@ -102,24 +102,34 @@
   }
 
   // Allows a flex_item to fill the row when .two_across > .across_4
-  [class*='_across'] > .flex_item {
-    &[class*='across_'] {
-      flex-basis: 100%;
+  [class*='_across'] {
+     > .flex_item[class*='across_'] {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    &.gutter {
+      > .flex_item[class*='across_'] {
+        flex: 0 0 auto;
+        width: calc(100% - #{$grid_gutter_x} * 2);
+     }
     }
   }
 
   @for $across_level from 2 through 12 {
     @if $across_level < $shorthand_level {
-      .#{shorthand-name($shorthand_level)}#{$extension} {
+      .row.#{shorthand-name($shorthand_level)}#{$extension} {
         > .flex_item {
           &.across_#{$across_level} {
-            flex-basis: #{percentage($across_level / $shorthand_level)};
+            flex: 0 0 auto;
+            width: #{percentage($across_level / $shorthand_level)};
           }
         }
 
         &.gutter > .flex_item {
           &.across_#{$across_level} {
-            flex-basis: calc(#{percentage($across_level / $shorthand_level)} - #{$grid_gutter_x} * 2);
+            flex: 0 0 auto;
+            width: calc(#{percentage($across_level / $shorthand_level)} - #{$grid_gutter_x} * 2);
           }
         }
       }
@@ -134,7 +144,8 @@
     $shorthand: shorthand-name($grow_level);
     @for $i from 2 through $grow_level {
       [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
-        flex-basis: calc(#{percentage(1 / $grow_level)} * #{$i});
+        flex: 0 0 auto;
+        width: calc(#{percentage(1 / $grow_level)} * #{$i});
       }
     }
   }
