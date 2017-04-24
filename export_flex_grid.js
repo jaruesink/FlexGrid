@@ -1,5 +1,5 @@
 const path = require('path');
-const fs = require('fs-extra');
+const fs = require('fs');
 
 const export_path = path.resolve(__dirname, 'dist');
 
@@ -24,5 +24,7 @@ remove_files.forEach((file) => {
 
 // copy new files to export_path
 copy_files.forEach((file) => {
-  fs.copySync(path.resolve(__dirname, `src/styles/${file}`), `${export_path}/${file}`);
+  fs.createReadStream(
+    path.resolve(__dirname, `src/styles/${file}`)
+  ).pipe(fs.createWriteStream(`${export_path}/${file}`));
 });
