@@ -5249,6 +5249,8 @@
     -webkit-box-ordinal-group: 7;
         -ms-flex-order: 6;
             order: 6; }
+  .hide {
+    display: none !important; }
   @media (min-width: 0) and (max-width: 511px) {
     .grow_1_xs_only {
       -webkit-box-flex: 1;
@@ -5340,7 +5342,9 @@
     .order_6_xs_only {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_xs_only {
+      display: none !important; } }
   @media (min-width: 512px) {
     .grow_1_sm {
       -webkit-box-flex: 1;
@@ -5616,7 +5620,9 @@
     .order_6_sm {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_sm {
+      display: none !important; } }
   @media (min-width: 512px) and (max-width: 759px) {
     .grow_1_sm_only {
       -webkit-box-flex: 1;
@@ -5708,7 +5714,9 @@
     .order_6_sm_only {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_sm_only {
+      display: none !important; } }
   @media (min-width: 760px) {
     .grow_1_md {
       -webkit-box-flex: 1;
@@ -5984,7 +5992,9 @@
     .order_6_md {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_md {
+      display: none !important; } }
   @media (min-width: 760px) and (max-width: 1011px) {
     .grow_1_md_only {
       -webkit-box-flex: 1;
@@ -6076,7 +6086,9 @@
     .order_6_md_only {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_md_only {
+      display: none !important; } }
   @media (min-width: 1012px) {
     .grow_1_lg {
       -webkit-box-flex: 1;
@@ -6352,7 +6364,9 @@
     .order_6_lg {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_lg {
+      display: none !important; } }
   @media (min-width: 1012px) and (max-width: 1479px) {
     .grow_1_lg_only {
       -webkit-box-flex: 1;
@@ -6444,7 +6458,9 @@
     .order_6_lg_only {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_lg_only {
+      display: none !important; } }
   @media (min-width: 1480px) {
     .grow_1_xl {
       -webkit-box-flex: 1;
@@ -6720,6 +6736,8 @@
     .order_6_xl {
       -webkit-box-ordinal-group: 7;
           -ms-flex-order: 6;
-              order: 6; } }
+              order: 6; }
+    .hide_xl {
+      display: none !important; } }
 
 /*# sourceMappingURL=styles.css.map*/

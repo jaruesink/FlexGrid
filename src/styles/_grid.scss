@@ -30,6 +30,7 @@
     @include build_alignments($breakpoint);
     @include build_shorthand_grows($breakpoint);
     @include build_order_helpers($breakpoint);
+    @include build_hidden_helpers($breakpoint);
   }
   @include build_only_media_queries($breakpoint) {
     @include build_grows($breakpoint, true);
@@ -42,5 +43,6 @@
     // // It makes the file size a lot larger.
     // @include build_shorthand_grows($breakpoint, true);
     @include build_order_helpers($breakpoint, true);
+    @include build_hidden_helpers($breakpoint, true);
   }
 }

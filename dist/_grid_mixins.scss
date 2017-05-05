@@ -168,6 +168,18 @@
   }
 }
 
+@mixin build_hidden_helpers($breakpoint, $only: false) {
+
+  $extension: breakpoint-extension($breakpoint);
+  @if ($only) {
+    $extension: breakpoint-only-extension($breakpoint);
+  }
+
+  .hide#{$extension} {
+    display: none !important;
+  }
+}
+
 @mixin build_spacing_helpers($grow_level, $breakpoint, $only: false) {
 
   $extension: grow-extension($grow_level) + breakpoint-extension($breakpoint);
