@@ -56,6 +56,13 @@
   @return true;
 }
 
+@function requires-down-media-query($breakpoint) {
+  @if ($breakpoint == 'xs') {
+    @return false;
+  }
+  @return true;
+}
+
 @function breakpoint-extension($breakpoint) {
   @if (requires-media-query($breakpoint)) {
     @return '_#{$breakpoint}';
@@ -66,6 +73,13 @@
 @function breakpoint-only-extension($breakpoint) {
   @if (requires-only-media-query($breakpoint)) {
     @return '_#{$breakpoint}_only';
+  }
+  @return '';
+}
+
+@function breakpoint-down-extension($breakpoint) {
+  @if (requires-down-media-query($breakpoint)) {
+    @return '_#{$breakpoint}_down';
   }
   @return '';
 }

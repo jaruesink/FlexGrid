@@ -18,6 +18,15 @@
   }
 }
 
+@mixin build_down_media_queries($breakpoint) {
+
+  @if (requires-down-media-query($breakpoint)) {
+    @media (max-width: breakpoint-value($breakpoint) - 1px) {
+      @content;
+    }
+  }
+}
+
 @mixin build_grows($breakpoint, $only: false) {
 
   $extension: breakpoint-extension($breakpoint);
@@ -168,11 +177,14 @@
   }
 }
 
-@mixin build_hidden_helpers($breakpoint, $only: false) {
+@mixin build_hidden_helpers($breakpoint, $only: false, $down: false) {
 
   $extension: breakpoint-extension($breakpoint);
   @if ($only) {
     $extension: breakpoint-only-extension($breakpoint);
+  }
+  @if ($down) {
+    $extension: breakpoint-down-extension($breakpoint);
   }
 
   .hide#{$extension} {

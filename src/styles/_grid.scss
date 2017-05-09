@@ -45,4 +45,7 @@
     @include build_order_helpers($breakpoint, true);
     @include build_hidden_helpers($breakpoint, true);
   }
+  @include build_down_media_queries($breakpoint) {
+    @include build_hidden_helpers($breakpoint, false, true);
+  }
 }
