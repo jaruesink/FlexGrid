@@ -4956,8 +4956,7 @@
               flex: 0 0 auto;
       width: calc(91.66667% - 16px * 2); } }
   .row[class*='_across'] > .flex_item.full_width {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; }
+    width: 100%; }
   .row, .row * {
     box-sizing: border-box; }
   .gutter {

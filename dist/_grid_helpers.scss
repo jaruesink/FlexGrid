@@ -32,7 +32,7 @@
 .row {
   &[class*='_across'] > .flex_item {
     &.full_width {
-      flex-basis: 100%;
+      width: 100%;
     }
   }
 }
