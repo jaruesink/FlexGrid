@@ -4959,7 +4959,7 @@
     width: 100%; }
   .row, .row * {
     box-sizing: border-box; }
-  .gutter {
+  [class*='gutter'] {
     padding: .01% 0; }
   .row {
     display: block;
