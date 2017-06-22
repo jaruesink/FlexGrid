@@ -4969,10 +4969,10 @@
             flex-flow: row wrap; }
     .row > .full_width {
       width: 100%; }
-    .row.gutter > .flex_item {
-      margin: 16px 16px; }
-      .row.gutter > .flex_item.full_width {
-        width: calc(100% - 32px); }
+  .gutter > .flex_item {
+    margin: 16px 16px; }
+    .gutter > .flex_item.full_width {
+      width: calc(100% - 32px); }
   .grow_1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
