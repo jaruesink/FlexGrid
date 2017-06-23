@@ -29,7 +29,7 @@
 }
 
 // Full Width inside across helpers
-[class*='_across'] > .flex_item {
+.row[class*='_across'] > .flex_item {
   &.full_width {
     width: 100%;
   }

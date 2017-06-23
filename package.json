@@ -31,5 +31,8 @@
     "url-loader": "^0.5.7",
     "webpack": "^2.2.0-rc.3",
     "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "flex_grid": "^1.8.8"
   }
 }
