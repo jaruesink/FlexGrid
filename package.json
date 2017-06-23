@@ -1,6 +1,6 @@
 {
   "name": "flex_grid",
-  "version": "1.8.0",
+  "version": "1.8.6",
   "description": "a simple class based grid solution using flexbox",
   "main": "index.js",
   "scripts": {
