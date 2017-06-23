@@ -3,6 +3,36 @@
 @import 'grid_helpers';
 @import 'grid_fixes';
 
+.row {
+  display: block;
+  flex-flow: row wrap;
+
+  > .full_width {
+    width: 100%;
+  }
+
+  &.gutter {
+    > .flex_item {
+      margin: $grid_gutter_y $grid_gutter_x;
+
+      &.full_width {
+        width: calc(100% - #{$grid_gutter_x * 2});
+      }
+    }
+
+    &_x > .flex_item {
+      margin: 0 $grid_gutter_x;
+
+      &.full_width {
+        width: calc(100% - #{$grid_gutter_x * 2});
+      }
+    }
+    &_y > .flex_item {
+      margin: $grid_gutter_y 0;
+    }
+  }
+}
+
 // BUIlD EVERYTHING
 @each $breakpoint in map-keys($breakpoints) {
   @include build_media_queries($breakpoint) {
@@ -29,35 +59,5 @@
   }
   @include build_down_media_queries($breakpoint) {
     @include build_hidden_helpers($breakpoint, false, true);
-  }
-}
-
-.row {
-  display: block;
-  flex-flow: row wrap;
-
-  > .full_width {
-    width: 100%;
-  }
-}
-
-.gutter {
-  > .flex_item {
-    margin: $grid_gutter_y $grid_gutter_x;
-
-    &.full_width {
-      width: calc(100% - #{$grid_gutter_x * 2});
-    }
-  }
-
-  &_x > .flex_item {
-    margin: 0 $grid_gutter_x;
-
-    &.full_width {
-      width: calc(100% - #{$grid_gutter_x * 2});
-    }
-  }
-  &_y > .flex_item {
-    margin: $grid_gutter_y 0;
   }
 }
