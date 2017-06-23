@@ -10,8 +10,10 @@
   > .full_width {
     width: 100%;
   }
+}
 
-  &.gutter > .flex_item {
+.gutter {
+  > .flex_item {
     margin: $grid_gutter_y $grid_gutter_x;
 
     &.full_width {
@@ -19,6 +21,16 @@
     }
   }
 
+  &_x > .flex_item {
+    margin: 0 $grid_gutter_x;
+
+    &.full_width {
+      width: calc(100% - #{$grid_gutter_x * 2});
+    }
+  }
+  &_y > .flex_item {
+    margin: $grid_gutter_y 0;
+  }
 }
 
 // BUIlD EVERYTHING

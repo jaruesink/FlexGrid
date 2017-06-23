@@ -1656,7 +1656,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1666,7 +1666,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1676,7 +1676,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 66.66667%; }
-  .row.three_across.gutter > .flex_item.across_2 {
+  .row.three_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1686,7 +1686,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1696,7 +1696,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%; }
-  .row.four_across.gutter > .flex_item.across_2 {
+  .row.four_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1706,7 +1706,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 75%; }
-  .row.four_across.gutter > .flex_item.across_3 {
+  .row.four_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1716,7 +1716,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1726,7 +1726,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 40%; }
-  .row.five_across.gutter > .flex_item.across_2 {
+  .row.five_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1736,7 +1736,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 60%; }
-  .row.five_across.gutter > .flex_item.across_3 {
+  .row.five_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1746,7 +1746,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 80%; }
-  .row.five_across.gutter > .flex_item.across_4 {
+  .row.five_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1756,7 +1756,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1766,7 +1766,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 33.33333%; }
-  .row.six_across.gutter > .flex_item.across_2 {
+  .row.six_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1776,7 +1776,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%; }
-  .row.six_across.gutter > .flex_item.across_3 {
+  .row.six_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1786,7 +1786,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 66.66667%; }
-  .row.six_across.gutter > .flex_item.across_4 {
+  .row.six_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1796,7 +1796,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 83.33333%; }
-  .row.six_across.gutter > .flex_item.across_5 {
+  .row.six_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1806,7 +1806,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1816,7 +1816,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 28.57143%; }
-  .row.seven_across.gutter > .flex_item.across_2 {
+  .row.seven_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1826,7 +1826,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 42.85714%; }
-  .row.seven_across.gutter > .flex_item.across_3 {
+  .row.seven_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1836,7 +1836,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 57.14286%; }
-  .row.seven_across.gutter > .flex_item.across_4 {
+  .row.seven_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1846,7 +1846,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 71.42857%; }
-  .row.seven_across.gutter > .flex_item.across_5 {
+  .row.seven_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1856,7 +1856,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 85.71429%; }
-  .row.seven_across.gutter > .flex_item.across_6 {
+  .row.seven_across[class*='gutter'] > .flex_item.across_6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1866,7 +1866,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1876,7 +1876,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 25%; }
-  .row.eight_across.gutter > .flex_item.across_2 {
+  .row.eight_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1886,7 +1886,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 37.5%; }
-  .row.eight_across.gutter > .flex_item.across_3 {
+  .row.eight_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1896,7 +1896,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%; }
-  .row.eight_across.gutter > .flex_item.across_4 {
+  .row.eight_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1906,7 +1906,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 62.5%; }
-  .row.eight_across.gutter > .flex_item.across_5 {
+  .row.eight_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1916,7 +1916,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 75%; }
-  .row.eight_across.gutter > .flex_item.across_6 {
+  .row.eight_across[class*='gutter'] > .flex_item.across_6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1926,7 +1926,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 87.5%; }
-  .row.eight_across.gutter > .flex_item.across_7 {
+  .row.eight_across[class*='gutter'] > .flex_item.across_7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1936,7 +1936,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1946,7 +1946,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 22.22222%; }
-  .row.nine_across.gutter > .flex_item.across_2 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1956,7 +1956,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 33.33333%; }
-  .row.nine_across.gutter > .flex_item.across_3 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1966,7 +1966,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 44.44444%; }
-  .row.nine_across.gutter > .flex_item.across_4 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1976,7 +1976,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 55.55556%; }
-  .row.nine_across.gutter > .flex_item.across_5 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1986,7 +1986,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 66.66667%; }
-  .row.nine_across.gutter > .flex_item.across_6 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -1996,7 +1996,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 77.77778%; }
-  .row.nine_across.gutter > .flex_item.across_7 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2006,7 +2006,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 88.88889%; }
-  .row.nine_across.gutter > .flex_item.across_8 {
+  .row.nine_across[class*='gutter'] > .flex_item.across_8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2016,7 +2016,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2026,7 +2026,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 20%; }
-  .row.ten_across.gutter > .flex_item.across_2 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2036,7 +2036,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 30%; }
-  .row.ten_across.gutter > .flex_item.across_3 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2046,7 +2046,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 40%; }
-  .row.ten_across.gutter > .flex_item.across_4 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2056,7 +2056,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%; }
-  .row.ten_across.gutter > .flex_item.across_5 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2066,7 +2066,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 60%; }
-  .row.ten_across.gutter > .flex_item.across_6 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2076,7 +2076,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 70%; }
-  .row.ten_across.gutter > .flex_item.across_7 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2086,7 +2086,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 80%; }
-  .row.ten_across.gutter > .flex_item.across_8 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2096,7 +2096,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 90%; }
-  .row.ten_across.gutter > .flex_item.across_9 {
+  .row.ten_across[class*='gutter'] > .flex_item.across_9 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2106,7 +2106,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2116,7 +2116,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 18.18182%; }
-  .row.eleven_across.gutter > .flex_item.across_2 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2126,7 +2126,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 27.27273%; }
-  .row.eleven_across.gutter > .flex_item.across_3 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2136,7 +2136,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 36.36364%; }
-  .row.eleven_across.gutter > .flex_item.across_4 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2146,7 +2146,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 45.45455%; }
-  .row.eleven_across.gutter > .flex_item.across_5 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2156,7 +2156,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 54.54545%; }
-  .row.eleven_across.gutter > .flex_item.across_6 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2166,7 +2166,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 63.63636%; }
-  .row.eleven_across.gutter > .flex_item.across_7 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2176,7 +2176,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 72.72727%; }
-  .row.eleven_across.gutter > .flex_item.across_8 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2186,7 +2186,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 81.81818%; }
-  .row.eleven_across.gutter > .flex_item.across_9 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_9 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2196,7 +2196,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 90.90909%; }
-  .row.eleven_across.gutter > .flex_item.across_10 {
+  .row.eleven_across[class*='gutter'] > .flex_item.across_10 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2206,7 +2206,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 100%; }
-  [class*='_across'].gutter > .flex_item[class*='across_'] {
+  [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2216,7 +2216,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 16.66667%; }
-  .row.twelve_across.gutter > .flex_item.across_2 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2226,7 +2226,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 25%; }
-  .row.twelve_across.gutter > .flex_item.across_3 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2236,7 +2236,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 33.33333%; }
-  .row.twelve_across.gutter > .flex_item.across_4 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2246,7 +2246,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 41.66667%; }
-  .row.twelve_across.gutter > .flex_item.across_5 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2256,7 +2256,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 50%; }
-  .row.twelve_across.gutter > .flex_item.across_6 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2266,7 +2266,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 58.33333%; }
-  .row.twelve_across.gutter > .flex_item.across_7 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2276,7 +2276,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 66.66667%; }
-  .row.twelve_across.gutter > .flex_item.across_8 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2286,7 +2286,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 75%; }
-  .row.twelve_across.gutter > .flex_item.across_9 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_9 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2296,7 +2296,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 83.33333%; }
-  .row.twelve_across.gutter > .flex_item.across_10 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_10 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2306,7 +2306,7 @@
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: 91.66667%; }
-  .row.twelve_across.gutter > .flex_item.across_11 {
+  .row.twelve_across[class*='gutter'] > .flex_item.across_11 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -2317,7 +2317,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2327,7 +2327,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2337,7 +2337,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.three_across_sm.gutter > .flex_item.across_2 {
+    .row.three_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2347,7 +2347,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2357,7 +2357,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.four_across_sm.gutter > .flex_item.across_2 {
+    .row.four_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2367,7 +2367,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.four_across_sm.gutter > .flex_item.across_3 {
+    .row.four_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2377,7 +2377,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2387,7 +2387,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.five_across_sm.gutter > .flex_item.across_2 {
+    .row.five_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2397,7 +2397,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.five_across_sm.gutter > .flex_item.across_3 {
+    .row.five_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2407,7 +2407,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.five_across_sm.gutter > .flex_item.across_4 {
+    .row.five_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2417,7 +2417,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2427,7 +2427,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.six_across_sm.gutter > .flex_item.across_2 {
+    .row.six_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2437,7 +2437,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.six_across_sm.gutter > .flex_item.across_3 {
+    .row.six_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2447,7 +2447,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.six_across_sm.gutter > .flex_item.across_4 {
+    .row.six_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2457,7 +2457,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.six_across_sm.gutter > .flex_item.across_5 {
+    .row.six_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2467,7 +2467,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2477,7 +2477,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 28.57143%; }
-    .row.seven_across_sm.gutter > .flex_item.across_2 {
+    .row.seven_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2487,7 +2487,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 42.85714%; }
-    .row.seven_across_sm.gutter > .flex_item.across_3 {
+    .row.seven_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2497,7 +2497,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 57.14286%; }
-    .row.seven_across_sm.gutter > .flex_item.across_4 {
+    .row.seven_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2507,7 +2507,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 71.42857%; }
-    .row.seven_across_sm.gutter > .flex_item.across_5 {
+    .row.seven_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2517,7 +2517,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 85.71429%; }
-    .row.seven_across_sm.gutter > .flex_item.across_6 {
+    .row.seven_across_sm[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2527,7 +2527,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2537,7 +2537,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.eight_across_sm.gutter > .flex_item.across_2 {
+    .row.eight_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2547,7 +2547,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 37.5%; }
-    .row.eight_across_sm.gutter > .flex_item.across_3 {
+    .row.eight_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2557,7 +2557,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.eight_across_sm.gutter > .flex_item.across_4 {
+    .row.eight_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2567,7 +2567,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 62.5%; }
-    .row.eight_across_sm.gutter > .flex_item.across_5 {
+    .row.eight_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2577,7 +2577,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.eight_across_sm.gutter > .flex_item.across_6 {
+    .row.eight_across_sm[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2587,7 +2587,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 87.5%; }
-    .row.eight_across_sm.gutter > .flex_item.across_7 {
+    .row.eight_across_sm[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2597,7 +2597,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2607,7 +2607,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 22.22222%; }
-    .row.nine_across_sm.gutter > .flex_item.across_2 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2617,7 +2617,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.nine_across_sm.gutter > .flex_item.across_3 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2627,7 +2627,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 44.44444%; }
-    .row.nine_across_sm.gutter > .flex_item.across_4 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2637,7 +2637,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 55.55556%; }
-    .row.nine_across_sm.gutter > .flex_item.across_5 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2647,7 +2647,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.nine_across_sm.gutter > .flex_item.across_6 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2657,7 +2657,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 77.77778%; }
-    .row.nine_across_sm.gutter > .flex_item.across_7 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2667,7 +2667,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 88.88889%; }
-    .row.nine_across_sm.gutter > .flex_item.across_8 {
+    .row.nine_across_sm[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2677,7 +2677,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2687,7 +2687,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 20%; }
-    .row.ten_across_sm.gutter > .flex_item.across_2 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2697,7 +2697,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 30%; }
-    .row.ten_across_sm.gutter > .flex_item.across_3 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2707,7 +2707,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.ten_across_sm.gutter > .flex_item.across_4 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2717,7 +2717,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.ten_across_sm.gutter > .flex_item.across_5 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2727,7 +2727,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.ten_across_sm.gutter > .flex_item.across_6 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2737,7 +2737,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 70%; }
-    .row.ten_across_sm.gutter > .flex_item.across_7 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2747,7 +2747,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.ten_across_sm.gutter > .flex_item.across_8 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2757,7 +2757,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90%; }
-    .row.ten_across_sm.gutter > .flex_item.across_9 {
+    .row.ten_across_sm[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2767,7 +2767,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2777,7 +2777,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 18.18182%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_2 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2787,7 +2787,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 27.27273%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_3 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2797,7 +2797,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 36.36364%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_4 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2807,7 +2807,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 45.45455%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_5 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2817,7 +2817,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 54.54545%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_6 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2827,7 +2827,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 63.63636%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_7 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2837,7 +2837,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 72.72727%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_8 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2847,7 +2847,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 81.81818%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_9 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2857,7 +2857,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90.90909%; }
-    .row.eleven_across_sm.gutter > .flex_item.across_10 {
+    .row.eleven_across_sm[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2867,7 +2867,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2877,7 +2877,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 16.66667%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_2 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2887,7 +2887,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_3 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2897,7 +2897,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_4 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2907,7 +2907,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 41.66667%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_5 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2917,7 +2917,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_6 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2927,7 +2927,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 58.33333%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_7 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2937,7 +2937,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_8 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2947,7 +2947,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_9 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2957,7 +2957,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_10 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2967,7 +2967,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 91.66667%; }
-    .row.twelve_across_sm.gutter > .flex_item.across_11 {
+    .row.twelve_across_sm[class*='gutter'] > .flex_item.across_11 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2978,7 +2978,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2988,7 +2988,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -2998,7 +2998,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.three_across_md.gutter > .flex_item.across_2 {
+    .row.three_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3008,7 +3008,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3018,7 +3018,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.four_across_md.gutter > .flex_item.across_2 {
+    .row.four_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3028,7 +3028,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.four_across_md.gutter > .flex_item.across_3 {
+    .row.four_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3038,7 +3038,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3048,7 +3048,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.five_across_md.gutter > .flex_item.across_2 {
+    .row.five_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3058,7 +3058,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.five_across_md.gutter > .flex_item.across_3 {
+    .row.five_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3068,7 +3068,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.five_across_md.gutter > .flex_item.across_4 {
+    .row.five_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3078,7 +3078,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3088,7 +3088,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.six_across_md.gutter > .flex_item.across_2 {
+    .row.six_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3098,7 +3098,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.six_across_md.gutter > .flex_item.across_3 {
+    .row.six_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3108,7 +3108,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.six_across_md.gutter > .flex_item.across_4 {
+    .row.six_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3118,7 +3118,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.six_across_md.gutter > .flex_item.across_5 {
+    .row.six_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3128,7 +3128,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3138,7 +3138,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 28.57143%; }
-    .row.seven_across_md.gutter > .flex_item.across_2 {
+    .row.seven_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3148,7 +3148,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 42.85714%; }
-    .row.seven_across_md.gutter > .flex_item.across_3 {
+    .row.seven_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3158,7 +3158,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 57.14286%; }
-    .row.seven_across_md.gutter > .flex_item.across_4 {
+    .row.seven_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3168,7 +3168,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 71.42857%; }
-    .row.seven_across_md.gutter > .flex_item.across_5 {
+    .row.seven_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3178,7 +3178,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 85.71429%; }
-    .row.seven_across_md.gutter > .flex_item.across_6 {
+    .row.seven_across_md[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3188,7 +3188,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3198,7 +3198,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.eight_across_md.gutter > .flex_item.across_2 {
+    .row.eight_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3208,7 +3208,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 37.5%; }
-    .row.eight_across_md.gutter > .flex_item.across_3 {
+    .row.eight_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3218,7 +3218,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.eight_across_md.gutter > .flex_item.across_4 {
+    .row.eight_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3228,7 +3228,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 62.5%; }
-    .row.eight_across_md.gutter > .flex_item.across_5 {
+    .row.eight_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3238,7 +3238,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.eight_across_md.gutter > .flex_item.across_6 {
+    .row.eight_across_md[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3248,7 +3248,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 87.5%; }
-    .row.eight_across_md.gutter > .flex_item.across_7 {
+    .row.eight_across_md[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3258,7 +3258,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3268,7 +3268,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 22.22222%; }
-    .row.nine_across_md.gutter > .flex_item.across_2 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3278,7 +3278,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.nine_across_md.gutter > .flex_item.across_3 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3288,7 +3288,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 44.44444%; }
-    .row.nine_across_md.gutter > .flex_item.across_4 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3298,7 +3298,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 55.55556%; }
-    .row.nine_across_md.gutter > .flex_item.across_5 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3308,7 +3308,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.nine_across_md.gutter > .flex_item.across_6 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3318,7 +3318,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 77.77778%; }
-    .row.nine_across_md.gutter > .flex_item.across_7 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3328,7 +3328,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 88.88889%; }
-    .row.nine_across_md.gutter > .flex_item.across_8 {
+    .row.nine_across_md[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3338,7 +3338,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3348,7 +3348,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 20%; }
-    .row.ten_across_md.gutter > .flex_item.across_2 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3358,7 +3358,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 30%; }
-    .row.ten_across_md.gutter > .flex_item.across_3 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3368,7 +3368,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.ten_across_md.gutter > .flex_item.across_4 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3378,7 +3378,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.ten_across_md.gutter > .flex_item.across_5 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3388,7 +3388,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.ten_across_md.gutter > .flex_item.across_6 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3398,7 +3398,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 70%; }
-    .row.ten_across_md.gutter > .flex_item.across_7 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3408,7 +3408,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.ten_across_md.gutter > .flex_item.across_8 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3418,7 +3418,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90%; }
-    .row.ten_across_md.gutter > .flex_item.across_9 {
+    .row.ten_across_md[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3428,7 +3428,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3438,7 +3438,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 18.18182%; }
-    .row.eleven_across_md.gutter > .flex_item.across_2 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3448,7 +3448,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 27.27273%; }
-    .row.eleven_across_md.gutter > .flex_item.across_3 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3458,7 +3458,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 36.36364%; }
-    .row.eleven_across_md.gutter > .flex_item.across_4 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3468,7 +3468,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 45.45455%; }
-    .row.eleven_across_md.gutter > .flex_item.across_5 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3478,7 +3478,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 54.54545%; }
-    .row.eleven_across_md.gutter > .flex_item.across_6 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3488,7 +3488,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 63.63636%; }
-    .row.eleven_across_md.gutter > .flex_item.across_7 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3498,7 +3498,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 72.72727%; }
-    .row.eleven_across_md.gutter > .flex_item.across_8 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3508,7 +3508,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 81.81818%; }
-    .row.eleven_across_md.gutter > .flex_item.across_9 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3518,7 +3518,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90.90909%; }
-    .row.eleven_across_md.gutter > .flex_item.across_10 {
+    .row.eleven_across_md[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3528,7 +3528,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3538,7 +3538,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 16.66667%; }
-    .row.twelve_across_md.gutter > .flex_item.across_2 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3548,7 +3548,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.twelve_across_md.gutter > .flex_item.across_3 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3558,7 +3558,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.twelve_across_md.gutter > .flex_item.across_4 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3568,7 +3568,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 41.66667%; }
-    .row.twelve_across_md.gutter > .flex_item.across_5 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3578,7 +3578,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.twelve_across_md.gutter > .flex_item.across_6 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3588,7 +3588,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 58.33333%; }
-    .row.twelve_across_md.gutter > .flex_item.across_7 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3598,7 +3598,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.twelve_across_md.gutter > .flex_item.across_8 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3608,7 +3608,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.twelve_across_md.gutter > .flex_item.across_9 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3618,7 +3618,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.twelve_across_md.gutter > .flex_item.across_10 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3628,7 +3628,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 91.66667%; }
-    .row.twelve_across_md.gutter > .flex_item.across_11 {
+    .row.twelve_across_md[class*='gutter'] > .flex_item.across_11 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3639,7 +3639,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3649,7 +3649,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3659,7 +3659,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.three_across_lg.gutter > .flex_item.across_2 {
+    .row.three_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3669,7 +3669,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3679,7 +3679,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.four_across_lg.gutter > .flex_item.across_2 {
+    .row.four_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3689,7 +3689,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.four_across_lg.gutter > .flex_item.across_3 {
+    .row.four_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3699,7 +3699,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3709,7 +3709,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.five_across_lg.gutter > .flex_item.across_2 {
+    .row.five_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3719,7 +3719,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.five_across_lg.gutter > .flex_item.across_3 {
+    .row.five_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3729,7 +3729,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.five_across_lg.gutter > .flex_item.across_4 {
+    .row.five_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3739,7 +3739,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3749,7 +3749,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.six_across_lg.gutter > .flex_item.across_2 {
+    .row.six_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3759,7 +3759,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.six_across_lg.gutter > .flex_item.across_3 {
+    .row.six_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3769,7 +3769,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.six_across_lg.gutter > .flex_item.across_4 {
+    .row.six_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3779,7 +3779,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.six_across_lg.gutter > .flex_item.across_5 {
+    .row.six_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3789,7 +3789,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3799,7 +3799,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 28.57143%; }
-    .row.seven_across_lg.gutter > .flex_item.across_2 {
+    .row.seven_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3809,7 +3809,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 42.85714%; }
-    .row.seven_across_lg.gutter > .flex_item.across_3 {
+    .row.seven_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3819,7 +3819,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 57.14286%; }
-    .row.seven_across_lg.gutter > .flex_item.across_4 {
+    .row.seven_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3829,7 +3829,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 71.42857%; }
-    .row.seven_across_lg.gutter > .flex_item.across_5 {
+    .row.seven_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3839,7 +3839,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 85.71429%; }
-    .row.seven_across_lg.gutter > .flex_item.across_6 {
+    .row.seven_across_lg[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3849,7 +3849,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3859,7 +3859,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.eight_across_lg.gutter > .flex_item.across_2 {
+    .row.eight_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3869,7 +3869,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 37.5%; }
-    .row.eight_across_lg.gutter > .flex_item.across_3 {
+    .row.eight_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3879,7 +3879,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.eight_across_lg.gutter > .flex_item.across_4 {
+    .row.eight_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3889,7 +3889,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 62.5%; }
-    .row.eight_across_lg.gutter > .flex_item.across_5 {
+    .row.eight_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3899,7 +3899,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.eight_across_lg.gutter > .flex_item.across_6 {
+    .row.eight_across_lg[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3909,7 +3909,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 87.5%; }
-    .row.eight_across_lg.gutter > .flex_item.across_7 {
+    .row.eight_across_lg[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3919,7 +3919,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3929,7 +3929,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 22.22222%; }
-    .row.nine_across_lg.gutter > .flex_item.across_2 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3939,7 +3939,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.nine_across_lg.gutter > .flex_item.across_3 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3949,7 +3949,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 44.44444%; }
-    .row.nine_across_lg.gutter > .flex_item.across_4 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3959,7 +3959,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 55.55556%; }
-    .row.nine_across_lg.gutter > .flex_item.across_5 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3969,7 +3969,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.nine_across_lg.gutter > .flex_item.across_6 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3979,7 +3979,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 77.77778%; }
-    .row.nine_across_lg.gutter > .flex_item.across_7 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3989,7 +3989,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 88.88889%; }
-    .row.nine_across_lg.gutter > .flex_item.across_8 {
+    .row.nine_across_lg[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -3999,7 +3999,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4009,7 +4009,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 20%; }
-    .row.ten_across_lg.gutter > .flex_item.across_2 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4019,7 +4019,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 30%; }
-    .row.ten_across_lg.gutter > .flex_item.across_3 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4029,7 +4029,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.ten_across_lg.gutter > .flex_item.across_4 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4039,7 +4039,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.ten_across_lg.gutter > .flex_item.across_5 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4049,7 +4049,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.ten_across_lg.gutter > .flex_item.across_6 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4059,7 +4059,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 70%; }
-    .row.ten_across_lg.gutter > .flex_item.across_7 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4069,7 +4069,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.ten_across_lg.gutter > .flex_item.across_8 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4079,7 +4079,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90%; }
-    .row.ten_across_lg.gutter > .flex_item.across_9 {
+    .row.ten_across_lg[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4089,7 +4089,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4099,7 +4099,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 18.18182%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_2 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4109,7 +4109,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 27.27273%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_3 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4119,7 +4119,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 36.36364%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_4 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4129,7 +4129,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 45.45455%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_5 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4139,7 +4139,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 54.54545%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_6 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4149,7 +4149,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 63.63636%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_7 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4159,7 +4159,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 72.72727%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_8 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4169,7 +4169,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 81.81818%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_9 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4179,7 +4179,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90.90909%; }
-    .row.eleven_across_lg.gutter > .flex_item.across_10 {
+    .row.eleven_across_lg[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4189,7 +4189,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4199,7 +4199,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 16.66667%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_2 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4209,7 +4209,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_3 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4219,7 +4219,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_4 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4229,7 +4229,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 41.66667%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_5 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4239,7 +4239,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_6 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4249,7 +4249,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 58.33333%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_7 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4259,7 +4259,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_8 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4269,7 +4269,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_9 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4279,7 +4279,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_10 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4289,7 +4289,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 91.66667%; }
-    .row.twelve_across_lg.gutter > .flex_item.across_11 {
+    .row.twelve_across_lg[class*='gutter'] > .flex_item.across_11 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4300,7 +4300,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4310,7 +4310,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4320,7 +4320,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.three_across_xl.gutter > .flex_item.across_2 {
+    .row.three_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4330,7 +4330,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4340,7 +4340,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.four_across_xl.gutter > .flex_item.across_2 {
+    .row.four_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4350,7 +4350,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.four_across_xl.gutter > .flex_item.across_3 {
+    .row.four_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4360,7 +4360,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4370,7 +4370,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.five_across_xl.gutter > .flex_item.across_2 {
+    .row.five_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4380,7 +4380,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.five_across_xl.gutter > .flex_item.across_3 {
+    .row.five_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4390,7 +4390,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.five_across_xl.gutter > .flex_item.across_4 {
+    .row.five_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4400,7 +4400,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4410,7 +4410,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.six_across_xl.gutter > .flex_item.across_2 {
+    .row.six_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4420,7 +4420,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.six_across_xl.gutter > .flex_item.across_3 {
+    .row.six_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4430,7 +4430,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.six_across_xl.gutter > .flex_item.across_4 {
+    .row.six_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4440,7 +4440,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.six_across_xl.gutter > .flex_item.across_5 {
+    .row.six_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4450,7 +4450,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4460,7 +4460,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 28.57143%; }
-    .row.seven_across_xl.gutter > .flex_item.across_2 {
+    .row.seven_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4470,7 +4470,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 42.85714%; }
-    .row.seven_across_xl.gutter > .flex_item.across_3 {
+    .row.seven_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4480,7 +4480,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 57.14286%; }
-    .row.seven_across_xl.gutter > .flex_item.across_4 {
+    .row.seven_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4490,7 +4490,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 71.42857%; }
-    .row.seven_across_xl.gutter > .flex_item.across_5 {
+    .row.seven_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4500,7 +4500,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 85.71429%; }
-    .row.seven_across_xl.gutter > .flex_item.across_6 {
+    .row.seven_across_xl[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4510,7 +4510,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4520,7 +4520,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.eight_across_xl.gutter > .flex_item.across_2 {
+    .row.eight_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4530,7 +4530,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 37.5%; }
-    .row.eight_across_xl.gutter > .flex_item.across_3 {
+    .row.eight_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4540,7 +4540,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.eight_across_xl.gutter > .flex_item.across_4 {
+    .row.eight_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4550,7 +4550,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 62.5%; }
-    .row.eight_across_xl.gutter > .flex_item.across_5 {
+    .row.eight_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4560,7 +4560,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.eight_across_xl.gutter > .flex_item.across_6 {
+    .row.eight_across_xl[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4570,7 +4570,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 87.5%; }
-    .row.eight_across_xl.gutter > .flex_item.across_7 {
+    .row.eight_across_xl[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4580,7 +4580,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4590,7 +4590,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 22.22222%; }
-    .row.nine_across_xl.gutter > .flex_item.across_2 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4600,7 +4600,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.nine_across_xl.gutter > .flex_item.across_3 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4610,7 +4610,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 44.44444%; }
-    .row.nine_across_xl.gutter > .flex_item.across_4 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4620,7 +4620,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 55.55556%; }
-    .row.nine_across_xl.gutter > .flex_item.across_5 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4630,7 +4630,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.nine_across_xl.gutter > .flex_item.across_6 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4640,7 +4640,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 77.77778%; }
-    .row.nine_across_xl.gutter > .flex_item.across_7 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4650,7 +4650,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 88.88889%; }
-    .row.nine_across_xl.gutter > .flex_item.across_8 {
+    .row.nine_across_xl[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4660,7 +4660,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4670,7 +4670,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 20%; }
-    .row.ten_across_xl.gutter > .flex_item.across_2 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4680,7 +4680,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 30%; }
-    .row.ten_across_xl.gutter > .flex_item.across_3 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4690,7 +4690,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 40%; }
-    .row.ten_across_xl.gutter > .flex_item.across_4 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4700,7 +4700,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.ten_across_xl.gutter > .flex_item.across_5 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4710,7 +4710,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 60%; }
-    .row.ten_across_xl.gutter > .flex_item.across_6 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4720,7 +4720,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 70%; }
-    .row.ten_across_xl.gutter > .flex_item.across_7 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4730,7 +4730,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 80%; }
-    .row.ten_across_xl.gutter > .flex_item.across_8 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4740,7 +4740,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90%; }
-    .row.ten_across_xl.gutter > .flex_item.across_9 {
+    .row.ten_across_xl[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4750,7 +4750,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4760,7 +4760,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 18.18182%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_2 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4770,7 +4770,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 27.27273%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_3 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4780,7 +4780,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 36.36364%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_4 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4790,7 +4790,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 45.45455%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_5 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4800,7 +4800,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 54.54545%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_6 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4810,7 +4810,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 63.63636%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_7 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4820,7 +4820,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 72.72727%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_8 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4830,7 +4830,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 81.81818%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_9 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4840,7 +4840,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 90.90909%; }
-    .row.eleven_across_xl.gutter > .flex_item.across_10 {
+    .row.eleven_across_xl[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4850,7 +4850,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 100%; }
-    [class*='_across'].gutter > .flex_item[class*='across_'] {
+    [class*='_across'][class*='gutter'] > .flex_item[class*='across_'] {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4860,7 +4860,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 16.66667%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_2 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_2 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4870,7 +4870,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_3 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_3 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4880,7 +4880,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_4 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_4 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4890,7 +4890,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 41.66667%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_5 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_5 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4900,7 +4900,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_6 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_6 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4910,7 +4910,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 58.33333%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_7 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_7 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4920,7 +4920,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 66.66667%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_8 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_8 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4930,7 +4930,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 75%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_9 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_9 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4940,7 +4940,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 83.33333%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_10 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_10 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4950,7 +4950,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 91.66667%; }
-    .row.twelve_across_xl.gutter > .flex_item.across_11 {
+    .row.twelve_across_xl[class*='gutter'] > .flex_item.across_11 {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -4959,7 +4959,7 @@
     width: 100%; }
   .row, .row * {
     box-sizing: border-box; }
-  .gutter {
+  [class*='gutter'] {
     padding: .01% 0; }
   .row {
     display: block;
@@ -4969,10 +4969,16 @@
             flex-flow: row wrap; }
     .row > .full_width {
       width: 100%; }
-    .row.gutter > .flex_item {
-      margin: 16px 16px; }
-      .row.gutter > .flex_item.full_width {
-        width: calc(100% - 32px); }
+  .gutter > .flex_item {
+    margin: 16px 16px; }
+    .gutter > .flex_item.full_width {
+      width: calc(100% - 32px); }
+  .gutter_x > .flex_item {
+    margin: 0 16px; }
+    .gutter_x > .flex_item.full_width {
+      width: calc(100% - 32px); }
+  .gutter_y > .flex_item {
+    margin: 16px 0; }
   .grow_1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -5002,7 +5008,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 50%; }
-    .two_across.gutter > .flex_item {
+    .two_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5016,7 +5022,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 33.33333%; }
-    .three_across.gutter > .flex_item {
+    .three_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5030,7 +5036,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 25%; }
-    .four_across.gutter > .flex_item {
+    .four_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5044,7 +5050,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 20%; }
-    .five_across.gutter > .flex_item {
+    .five_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5058,7 +5064,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 16.66667%; }
-    .six_across.gutter > .flex_item {
+    .six_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5072,7 +5078,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 14.28571%; }
-    .seven_across.gutter > .flex_item {
+    .seven_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5086,7 +5092,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 12.5%; }
-    .eight_across.gutter > .flex_item {
+    .eight_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5100,7 +5106,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 11.11111%; }
-    .nine_across.gutter > .flex_item {
+    .nine_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5114,7 +5120,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 10%; }
-    .ten_across.gutter > .flex_item {
+    .ten_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5128,7 +5134,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 9.09091%; }
-    .eleven_across.gutter > .flex_item {
+    .eleven_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5142,7 +5148,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: 8.33333%; }
-    .twelve_across.gutter > .flex_item {
+    .twelve_across[class*='gutter'] > .flex_item {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
@@ -5374,7 +5380,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 50%; }
-      .two_across_sm.gutter > .flex_item {
+      .two_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5388,7 +5394,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 33.33333%; }
-      .three_across_sm.gutter > .flex_item {
+      .three_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5402,7 +5408,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 25%; }
-      .four_across_sm.gutter > .flex_item {
+      .four_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5416,7 +5422,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 20%; }
-      .five_across_sm.gutter > .flex_item {
+      .five_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5430,7 +5436,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 16.66667%; }
-      .six_across_sm.gutter > .flex_item {
+      .six_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5444,7 +5450,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 14.28571%; }
-      .seven_across_sm.gutter > .flex_item {
+      .seven_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5458,7 +5464,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 12.5%; }
-      .eight_across_sm.gutter > .flex_item {
+      .eight_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5472,7 +5478,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 11.11111%; }
-      .nine_across_sm.gutter > .flex_item {
+      .nine_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5486,7 +5492,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 10%; }
-      .ten_across_sm.gutter > .flex_item {
+      .ten_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5500,7 +5506,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 9.09091%; }
-      .eleven_across_sm.gutter > .flex_item {
+      .eleven_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5514,7 +5520,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 8.33333%; }
-      .twelve_across_sm.gutter > .flex_item {
+      .twelve_across_sm[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5749,7 +5755,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 50%; }
-      .two_across_md.gutter > .flex_item {
+      .two_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5763,7 +5769,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 33.33333%; }
-      .three_across_md.gutter > .flex_item {
+      .three_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5777,7 +5783,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 25%; }
-      .four_across_md.gutter > .flex_item {
+      .four_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5791,7 +5797,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 20%; }
-      .five_across_md.gutter > .flex_item {
+      .five_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5805,7 +5811,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 16.66667%; }
-      .six_across_md.gutter > .flex_item {
+      .six_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5819,7 +5825,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 14.28571%; }
-      .seven_across_md.gutter > .flex_item {
+      .seven_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5833,7 +5839,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 12.5%; }
-      .eight_across_md.gutter > .flex_item {
+      .eight_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5847,7 +5853,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 11.11111%; }
-      .nine_across_md.gutter > .flex_item {
+      .nine_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5861,7 +5867,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 10%; }
-      .ten_across_md.gutter > .flex_item {
+      .ten_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5875,7 +5881,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 9.09091%; }
-      .eleven_across_md.gutter > .flex_item {
+      .eleven_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -5889,7 +5895,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 8.33333%; }
-      .twelve_across_md.gutter > .flex_item {
+      .twelve_across_md[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6124,7 +6130,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 50%; }
-      .two_across_lg.gutter > .flex_item {
+      .two_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6138,7 +6144,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 33.33333%; }
-      .three_across_lg.gutter > .flex_item {
+      .three_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6152,7 +6158,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 25%; }
-      .four_across_lg.gutter > .flex_item {
+      .four_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6166,7 +6172,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 20%; }
-      .five_across_lg.gutter > .flex_item {
+      .five_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6180,7 +6186,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 16.66667%; }
-      .six_across_lg.gutter > .flex_item {
+      .six_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6194,7 +6200,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 14.28571%; }
-      .seven_across_lg.gutter > .flex_item {
+      .seven_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6208,7 +6214,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 12.5%; }
-      .eight_across_lg.gutter > .flex_item {
+      .eight_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6222,7 +6228,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 11.11111%; }
-      .nine_across_lg.gutter > .flex_item {
+      .nine_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6236,7 +6242,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 10%; }
-      .ten_across_lg.gutter > .flex_item {
+      .ten_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6250,7 +6256,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 9.09091%; }
-      .eleven_across_lg.gutter > .flex_item {
+      .eleven_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6264,7 +6270,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 8.33333%; }
-      .twelve_across_lg.gutter > .flex_item {
+      .twelve_across_lg[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6499,7 +6505,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 50%; }
-      .two_across_xl.gutter > .flex_item {
+      .two_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6513,7 +6519,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 33.33333%; }
-      .three_across_xl.gutter > .flex_item {
+      .three_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6527,7 +6533,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 25%; }
-      .four_across_xl.gutter > .flex_item {
+      .four_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6541,7 +6547,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 20%; }
-      .five_across_xl.gutter > .flex_item {
+      .five_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6555,7 +6561,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 16.66667%; }
-      .six_across_xl.gutter > .flex_item {
+      .six_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6569,7 +6575,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 14.28571%; }
-      .seven_across_xl.gutter > .flex_item {
+      .seven_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6583,7 +6589,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 12.5%; }
-      .eight_across_xl.gutter > .flex_item {
+      .eight_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6597,7 +6603,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 11.11111%; }
-      .nine_across_xl.gutter > .flex_item {
+      .nine_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6611,7 +6617,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 10%; }
-      .ten_across_xl.gutter > .flex_item {
+      .ten_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6625,7 +6631,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 9.09091%; }
-      .eleven_across_xl.gutter > .flex_item {
+      .eleven_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
@@ -6639,7 +6645,7 @@
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
         width: 8.33333%; }
-      .twelve_across_xl.gutter > .flex_item {
+      .twelve_across_xl[class*='gutter'] > .flex_item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
