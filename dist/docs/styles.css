@@ -4955,7 +4955,7 @@
           -ms-flex: 0 0 auto;
               flex: 0 0 auto;
       width: calc(91.66667% - 16px * 2); } }
-  .row[class*='_across'] > .flex_item.full_width {
+  [class*='_across'] > .flex_item.full_width {
     width: 100%; }
   .row, .row * {
     box-sizing: border-box; }
