@@ -88,7 +88,7 @@
     $extension: breakpoint-only-extension($breakpoint);
   }
 
-  @for $shorthand_level from 2 through 12 {
+  @for $shorthand_level from 2 through get-shorthand-count() {
     .#{shorthand-name($shorthand_level)}#{$extension} {
       display: flex;
 
@@ -127,7 +127,7 @@
     }
   }
 
-  @for $across_level from 2 through 12 {
+  @for $across_level from 2 through get-shorthand-count() {
     @if $across_level < $shorthand_level {
       .row.#{shorthand-name($shorthand_level)}#{$extension} {
         > .flex_item {
@@ -148,20 +148,6 @@
   }
 
 }
-
-@mixin build_shorthand_grows($breakpoint, $only: false) {
-  $extension: breakpoint-extension($breakpoint);
-  @for $grow_level from 2 through $grow_levels {
-    $shorthand: shorthand-name($grow_level);
-    @for $i from 2 through $grow_level {
-      [class*='#{$shorthand}'] > .grow_#{$i}#{$extension} {
-        flex: 0 0 auto;
-        width: calc(#{percentage(1 / $grow_level)} * #{$i});
-      }
-    }
-  }
-}
-
 
 @mixin build_order_helpers($breakpoint, $only: false) {
 
