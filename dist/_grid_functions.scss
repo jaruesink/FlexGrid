@@ -90,3 +90,7 @@
   }
   @return '_#{$grow_level}';
 }
+
+@function get-shorthand-count() {
+  @return length($shorthands)+1;
+}
