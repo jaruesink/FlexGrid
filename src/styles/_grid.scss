@@ -12,21 +12,70 @@
   }
 
   &.gutter {
+
+    @if $gutter_has_breakpoints {
+      @media (min-width: breakpoint-value('md')) {
+        margin-left: -$grid_gutter_x;
+        margin-right: -$grid_gutter_x;
+      }
+
+      @media (min-width: breakpoint-value('lg')) {
+        margin-left: -$grid_gutter_x*2;
+        margin-right: -$grid_gutter_x*2;
+      }
+    }
+
     > .flex_item {
       margin: $grid_gutter_y $grid_gutter_x;
 
       &.full_width {
         width: calc(100% - #{$grid_gutter_x * 2});
       }
-    }
 
-    &_x > .flex_item {
-      margin: 0 $grid_gutter_x;
+      @if $gutter_has_breakpoints {
+        @media (min-width: breakpoint-value('md')) {
+          margin: $grid_gutter_y $grid_gutter_x*2;
+        }
 
-      &.full_width {
-        width: calc(100% - #{$grid_gutter_x * 2});
+        @media (min-width: breakpoint-value('lg')) {
+          margin: $grid_gutter_y $grid_gutter_x*3;
+        }
       }
     }
+
+    &_x {
+
+      @if $gutter_has_breakpoints {
+        @media (min-width: breakpoint-value('md')) {
+          margin-left: -$grid_gutter_x;
+          margin-right: -$grid_gutter_x;
+        }
+
+        @media (min-width: breakpoint-value('lg')) {
+          margin-left: -$grid_gutter_x*2;
+          margin-right: -$grid_gutter_x*2;
+        }
+      }
+
+      > .flex_item {
+        margin: 0 $grid_gutter_x;
+
+        &.full_width {
+          width: calc(100% - #{$grid_gutter_x * 2});
+        }
+
+        @if $gutter_has_breakpoints {
+          @media (min-width: breakpoint-value('md')) {
+            margin: 0 $grid_gutter_x*2;
+          }
+
+          @media (min-width: breakpoint-value('lg')) {
+            margin: 0 $grid_gutter_x*3;
+          }
+        }
+      }
+    }
+
     &_y > .flex_item {
       margin: $grid_gutter_y 0;
     }
