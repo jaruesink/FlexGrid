@@ -97,11 +97,8 @@
         width: #{percentage(1 / $shorthand_level)};
       }
 
-      &[class*='gutter'] > .flex_item {
-        flex: 0 0 auto;
-        width: calc(#{percentage(1 / $shorthand_level)} - #{$grid_gutter_x} * 2);
-
-        @if $gutter_has_breakpoints {
+      &[class*='gutter'] {
+        &.inner_margin > .flex_item {
           @media (min-width: breakpoint-value('md')) {
             width: calc(#{percentage(1 / $shorthand_level)} - (#{$grid_gutter_x}*2) * 2);
           }
@@ -109,6 +106,10 @@
           @media (min-width: breakpoint-value('lg')) {
             width: calc(#{percentage(1 / $shorthand_level)} - (#{$grid_gutter_x}*3) * 2);
           }
+        }
+        > .flex_item {
+          flex: 0 0 auto;
+          width: calc(#{percentage(1 / $shorthand_level)} - #{$grid_gutter_x} * 2);
         }
       }
     }
@@ -130,19 +131,19 @@
     }
 
     &[class*='gutter'] {
+      &.inner_margin > .flex_item[class*='across_'] {
+        @media (min-width: breakpoint-value('md')) {
+          width: calc(100% - (#{$grid_gutter_x}*2) * 2);
+        }
+
+        @media (min-width: breakpoint-value('lg')) {
+          width: calc(100% - (#{$grid_gutter_x}*3) * 2);
+        }
+      }
+
       > .flex_item[class*='across_'] {
         flex: 0 0 auto;
         width: calc(100% - #{$grid_gutter_x} * 2);
-
-        @if $gutter_has_breakpoints {
-          @media (min-width: breakpoint-value('md')) {
-            width: calc(100% - (#{$grid_gutter_x}*2) * 2);
-          }
-
-          @media (min-width: breakpoint-value('lg')) {
-            width: calc(100% - (#{$grid_gutter_x}*3) * 2);
-          }
-        }
       }
     }
   }
