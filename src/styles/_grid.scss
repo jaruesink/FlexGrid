@@ -56,17 +56,20 @@
 
         > .flex_item {
           @media (min-width: breakpoint-value('md')) {
-            margin: 0 $grid_gutter_x*2;
+            margin-left: $grid_gutter_x*2;
+            margin-right: $grid_gutter_x*2;
           }
 
           @media (min-width: breakpoint-value('lg')) {
-            margin: 0 $grid_gutter_x*3;
+            margin-left: $grid_gutter_x*3;
+            margin-right: $grid_gutter_x*3;
           }
         }
       }
 
       > .flex_item {
-        margin: 0 $grid_gutter_x;
+        margin-left: $grid_gutter_x;
+        margin-right: $grid_gutter_x;
 
         &.full_width {
           width: calc(100% - #{$grid_gutter_x * 2});
@@ -75,7 +78,8 @@
     }
 
     &_y > .flex_item {
-      margin: $grid_gutter_y 0;
+      margin-top: $grid_gutter_y;
+      margin-bottom: $grid_gutter_y;
     }
   }
 }
