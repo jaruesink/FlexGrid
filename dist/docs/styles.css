@@ -5459,16 +5459,20 @@
         margin-right: -32px; } }
     @media (min-width: 760px) {
       .row.gutter_x.inner_margin > .flex_item {
-        margin: 0 32px; } }
+        margin-left: 32px;
+        margin-right: 32px; } }
     @media (min-width: 1012px) {
       .row.gutter_x.inner_margin > .flex_item {
-        margin: 0 48px; } }
+        margin-left: 48px;
+        margin-right: 48px; } }
     .row.gutter_x > .flex_item {
-      margin: 0 16px; }
+      margin-left: 16px;
+      margin-right: 16px; }
       .row.gutter_x > .flex_item.full_width {
         width: calc(100% - 32px); }
     .row.gutter_y > .flex_item {
-      margin: 16px 0; }
+      margin-top: 16px;
+      margin-bottom: 16px; }
   .grow_1 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
